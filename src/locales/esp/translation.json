@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Experiencia",
+    "contact": "Contacto"
+  },
+  "home": {
+    "greeting": "Hola, soy",
+    "name": "Amir Salama",  
+    "title": "Desarrollador Full Stack (Laravel | React.js)",
+    "hire_me": "Contrátame",
+    "view_work": "Ver Trabajos",
+    "my_name": "Amir Salama"
+  },
+  "home_sections": {
+    "stats": {
+      "title": "Mis Logros e Impacto",
+      "l1": "Años de Experiencia",
+      "l2": "Mejora del Rendimiento Backend",
+      "l3": "Aplicaciones Web Modernas Construidas",
+      "l4": "Mejora de Velocidad Frontend"
+    },
+    "skills": {
+      "title": "Habilidades Clave",
+      "p1": "Dominio sólido de PHP y el framework Laravel para desarrollo backend robusto y escalable.",
+      "p2": "Creación de interfaces dinámicas y amigables con React.js y JavaScript moderno (ES6+).",
+      "p3": "Experto en diseños pixel-perfect y responsivos utilizando Tailwind CSS.",
+      "p4": "Habilidad en desarrollo de APIs, optimización de bases de datos (MySQL) e integración de servicios de terceros."
+    },
+    "objective": {
+      "title": "¿Por qué contratarme? El valor que aporto.",
+      "read_more": "Leer Historia Completa"
+    },
+    "featured": {
+      "title": "Proyecto Destacado",
+      "view_all": "Ver Todos los Proyectos"
+    },
+    "edu": {
+      "title": "Formación y Comunicación",
+      "degree": "Licenciatura en Sistemas de Información",
+      "major": "Tecnología de la Información",
+      "academy": "Al Shorouk Academy, Egipto (2020-2024)",
+      "languages": "Idiomas y Comunicación",
+      "ar": "Árabe: Nativo",
+      "en": "Inglés: Intermedio (Mejorando para comunicación profesional)"
+    }
+  },
+  "about": {
+    "objective_title": "Introducción",
+    "no": "Habilidades",
+    "objective_p1": "Desarrollador Full Stack con más de 2 años de experiencia creando 10+ aplicaciones web modernas usando Laravel y React.js.",
+    "objective_p2": "Hábil en desarrollo de APIs, optimización de bases de datos y mejoras de rendimiento frontend. Apasionado por escribir código limpio y escalable y entregar soluciones centradas en el usuario.",
+    "download_cv": "Descargar mi CV",
+    "skills": {
+      "languages": "Idiomas",
+      "frameworks": "Frameworks",
+      "databases": "Bases de Datos",
+      "others": "Otros (Conceptos)"
+    }
+  },
+  "exp": {
+    "subtitle": "Mis Logros y Impacto Clave: Una muestra de mis proyectos de desarrollo más significativos, destacando mi rol y las tecnologías utilizadas.",
+    "title": "Experiencia Profesional",
+    "hash_title": "Desarrollador Full Stack",
+    "hash_duration": "Mar 2025 - Oct 2025",
+    "hash_p1": "Desarrollé y desplegué 3+ aplicaciones full-stack usando Laravel, React.js y Tailwind CSS.",
+    "hash_p2": "Implementé autenticación segura JWT e integré APIs de terceros.",
+    "hash_p3": "Trabajé estrechamente con diseñadores UI/UX para entregar experiencias web responsivas y de alta calidad.",
+    "aqar_title": "Desarrollador Backend (PHP / Laravel)",
+    "aqar_duration": "Ene 2024 - Feb 2025",
+    "aqar_p1": "Mejoré el rendimiento del backend en un 30% mediante optimización de consultas y caching.",
+    "aqar_p2": "Construí y mantuve APIs RESTful usadas por múltiples módulos frontend.",
+    "aqar_p3": "Colaboré con el equipo frontend para ofrecer una experiencia de usuario un 20% más rápida."
+  },
+  "projects": {
+    "title": "Proyectos Clave",
+    "live_demo": "Demo en Vivo",
+    "github_code": "Código en GitHub",
+    "devdocs": {
+      "title": "DevDocs Language",
+      "desc": "Un hub de documentación para desarrolladores que agrega múltiples idiomas y frameworks en una interfaz rápida y buscable (React.js, Tailwind CSS)."
+    },
+    "ecommerce": {
+      "title": "App E-commerce (Laravel + React)",
+      "desc": "Plataforma e-commerce full-stack con pago seguro, gestión de productos y seguimiento de pedidos en tiempo real usando Laravel, React.js y MySQL."
+    },
+    "nidaa": {
+      "title": "Nidaa El-Samma",
+      "desc": "Aplicación web islámica con oraciones diarias, escucha del Corán, Tasbeeh y horarios de oración con sonido de Adhan y fecha Hijri."
+    }
+  },
+  "contact": {
+    "submitting": "Enviando mensaje...",
+    "sending": "Enviando...",
+    "success_message": "¡Gracias! Tu mensaje ha sido enviado exitosamente.",
+    "info": {
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "location": "Ubicación"
+    },
+    "form": {
+      "name": "Tu Nombre",
+      "email": "Tu Correo",
+      "subject": "Asunto",
+      "message": "Tu Mensaje/Consulta",
+      "button": "Enviar Mensaje"
+    }
+  }
+}

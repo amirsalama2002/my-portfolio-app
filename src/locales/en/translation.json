@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Experience",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I am",
+    "name": "Amir Salama",  
+    "title": "Full Stack Developer (Laravel | React.js)",
+    "hire_me": "Hire Me",
+    "view_work": "View Work",
+    "my_name": "Amir Salama"
+  },
+  "home_sections": {
+    "stats": {
+      "title": "My Achievements & Impact",
+      "l1": "Years of Experience",
+      "l2": "Backend Performance Boost",
+      "l3": "Modern Web Apps Built",
+      "l4": "Frontend Speed Improvement"
+    },
+    "skills": {
+      "title": "Core Expertise",
+      "p1": "Solid mastery of PHP and the Laravel framework for robust, scalable backend development.",
+      "p2": "Building dynamic, user-friendly interfaces with React.js and modern JavaScript (ES6+).",
+      "p3": "Expert in creating pixel-perfect, responsive designs using the utility-first framework Tailwind CSS.",
+      "p4": "Skilled in API development, database optimization (MySQL), and integrating third-party services."
+    },
+    "objective": {
+      "title": "Why Hire Me? The Value I Bring.",
+      "read_more": "Read Full Story"
+    },
+    "featured": {
+      "title": "Featured Project Highlight",
+      "view_all": "View All Projects"
+    },
+    "edu": {
+      "title": "Background & Communication",
+      "degree": "Bachelor's Degree in Information Systems",
+      "major": "Information Technology",
+      "academy": "Al Shorouk Academy, Egypt (2020-2024)",
+      "languages": "Languages & Communication",
+      "ar": "Arabic: Native",
+      "en": "English: Intermediate (Improving for professional communication)"
+    }
+  },
+  "about": {
+    "objective_title":"Introduction",
+    "no":"Skills",
+    "objective_p1": "Full Stack Developer with 2+ years of hands-on experience building 10+ modern web applications using Laravel and React.js.",
+    "objective_p2": "Skilled in API development, database optimization, and front-end performance improvements. Passionate about writing clean, scalable code and delivering user-centered solutions.",
+    "download_cv": "Download My CV",
+    "skills": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "databases": "Databases",
+      "others": "Others (Concepts)"
+    }
+  },
+  "exp": {
+    "subtitle":"My Accomplishments and Key Impact: A showcase of my most significant development projects, highlighting my role and the technologies utilized to achieve their goals.",
+    "title": "Professional Experience",
+    "hash_title": "Full Stack Developer",
+    "hash_duration": "Mar 2025 - Oct 2025",
+    "hash_p1": "Developed and deployed 3+ full-stack applications using Laravel, React.js, and Tailwind CSS.",
+    "hash_p2": "Implemented secure JWT authentication and integrated third-party APIs.",
+    "hash_p3": "Worked closely with UI/UX designers to deliver responsive, high-quality web experiences.",
+    "aqar_title": "Back-End Developer (PHP / Laravel)",
+    "aqar_duration": "Jan 2024 - Feb 2025",
+    "aqar_p1": "Improved backend performance by 30% through query optimization and caching.",
+    "aqar_p2": "Built and maintained RESTful APIs used by multiple frontend modules.",
+    "aqar_p3": "Collaborated with the frontend team to deliver a 20% faster user experience."
+  },
+  "projects": {
+    "title": "Key Projects",
+    "live_demo": "Live Demo",
+    "github_code": "GitHub Code",
+    "devdocs": {
+      "title": "DevDocs Language",
+      "desc": "A developer documentation hub that aggregates multiple languages and frameworks into one fast, searchable interface (React.js, Tailwind CSS)."
+    },
+    "ecommerce": {
+      "title": "E-commerce App (Laravel + React)",
+      "desc": "Full-stack e-commerce platform with secure checkout, product management, and real-time order tracking using Laravel, React.js, and MySQL."
+    },
+    "nidaa": {
+      "title": "Nidaa El-Samma",
+      "desc": "An Islamic web application with daily prayers, Quran listening, Tasbeeh, and prayer times with Adhan sound and Hijri date display."
+    }
+  },
+  "contact": {
+    "submitting": "Sending message...",
+    "sending": "Sending...",
+    "success_message": "Thank you! Your message has been sent successfully.",
+    "info": {
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "location": "Location"
+    },
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message/Inquiry",
+      "button": "Send Message"
+    }
+  }
+}

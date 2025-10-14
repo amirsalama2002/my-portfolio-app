@@ -1,0 +1,28 @@
+/* src/index.css */
+
+/* تأكد من إضافة هذا التعديل لضمان التجاوب ومنع شريط التمرير الأفقي */
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+@tailwind base;
+@tailwind components;
+
+
+
+/* src/index.css - إضافة أنيميشن الخلفية المتقدمة */
+
+/* تعريف الحركة الأساسية لتغيير موقع الخلفية */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* الفئة التي سنستخدمها في React */
+.animated-gradient {
+  background: linear-gradient(-45deg, #111827, #1f2937, #104e8d, #14b8a6); /* ألوان داكنة مع أزرق وتركواز */
+  background-size: 400% 400%; /* تمديد الخلفية لتغطية الحركة */
+  animation: gradient-shift 15s ease infinite; /* تطبيق الحركة */
+}

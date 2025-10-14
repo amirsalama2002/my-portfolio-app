@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Expérience",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Bonjour, je suis",
+    "name": "Amir Salama",
+    "title": "Développeur Full Stack (Laravel | React.js)",
+    "hire_me": "Embauchez-moi",
+    "view_work": "Voir les projets",
+    "my_name": "Amir Salama"
+  },
+  "home_sections": {
+    "stats": {
+      "title": "Mes réalisations et mon impact",
+      "l1": "Années d'expérience",
+      "l2": "Amélioration des performances backend",
+      "l3": "Applications web modernes développées",
+      "l4": "Optimisation de la vitesse du frontend"
+    },
+    "skills": {
+      "title": "Compétences principales",
+      "p1": "Maîtrise solide de PHP et du framework Laravel pour un développement backend robuste et évolutif.",
+      "p2": "Création d'interfaces dynamiques et conviviales avec React.js et JavaScript moderne (ES6+).",
+      "p3": "Expert dans la création de designs réactifs et précis au pixel près avec le framework Tailwind CSS.",
+      "p4": "Compétent en développement d’API, optimisation de base de données (MySQL) et intégration de services tiers."
+    },
+    "objective": {
+      "title": "Pourquoi m’embaucher ? La valeur que j’apporte.",
+      "read_more": "Lire l’histoire complète"
+    },
+    "featured": {
+      "title": "Projet vedette",
+      "view_all": "Voir tous les projets"
+    },
+    "edu": {
+      "title": "Parcours et communication",
+      "degree": "Licence en systèmes d'information",
+      "major": "Technologies de l'information",
+      "academy": "Académie Al Shorouk, Égypte (2020-2024)",
+      "languages": "Langues et communication",
+      "ar": "Arabe : Langue maternelle",
+      "en": "Anglais : Intermédiaire (en amélioration pour la communication professionnelle)"
+    }
+  },
+  "about": {
+    "objective_title": "Présentation",
+    "no": "Compétences",
+    "objective_p1": "Développeur Full Stack avec plus de 2 ans d’expérience pratique, ayant construit plus de 10 applications web modernes avec Laravel et React.js.",
+    "objective_p2": "Compétent en développement d’API, optimisation de base de données et amélioration des performances front-end. Passionné par l’écriture d’un code propre, évolutif et centré sur l’utilisateur.",
+    "download_cv": "Télécharger mon CV",
+    "skills": {
+      "languages": "Langages",
+      "frameworks": "Frameworks",
+      "databases": "Bases de données",
+      "others": "Autres (Concepts)"
+    }
+  },
+  "exp": {
+    "subtitle": "Mes réalisations et contributions clés : une vitrine de mes projets les plus importants, mettant en avant mon rôle et les technologies utilisées pour atteindre leurs objectifs.",
+    "title": "Expérience professionnelle",
+    "hash_title": "Développeur Full Stack",
+    "hash_duration": "Mars 2025 - Octobre 2025",
+    "hash_p1": "Développement et déploiement de plus de 3 applications full stack utilisant Laravel, React.js et Tailwind CSS.",
+    "hash_p2": "Mise en œuvre d’une authentification sécurisée JWT et intégration d’API tierces.",
+    "hash_p3": "Collaboration avec les concepteurs UI/UX pour offrir des expériences web réactives et de haute qualité.",
+    "aqar_title": "Développeur Back-End (PHP / Laravel)",
+    "aqar_duration": "Janvier 2024 - Février 2025",
+    "aqar_p1": "Amélioration des performances backend de 30 % grâce à l’optimisation des requêtes et au cache.",
+    "aqar_p2": "Création et maintenance d’API RESTful utilisées par plusieurs modules frontend.",
+    "aqar_p3": "Collaboration avec l’équipe frontend pour offrir une expérience utilisateur 20 % plus rapide."
+  },
+  "projects": {
+    "title": "Projets clés",
+    "live_demo": "Démo en ligne",
+    "github_code": "Code GitHub",
+    "devdocs": {
+      "title": "DevDocs Language",
+      "desc": "Un hub de documentation pour développeurs regroupant plusieurs langages et frameworks dans une interface rapide et consultable (React.js, Tailwind CSS)."
+    },
+    "ecommerce": {
+      "title": "Application e-commerce (Laravel + React)",
+      "desc": "Plateforme e-commerce full stack avec paiement sécurisé, gestion des produits et suivi des commandes en temps réel via Laravel, React.js et MySQL."
+    },
+    "nidaa": {
+      "title": "Nidaa El-Samma",
+      "desc": "Application islamique avec prières quotidiennes, écoute du Coran, tasbeeh et horaires de prière avec appel à la prière et affichage de la date hégirienne."
+    }
+  },
+  "contact": {
+    "submitting": "Envoi du message...",
+    "sending": "Envoi...",
+    "success_message": "Merci ! Votre message a été envoyé avec succès.",
+    "info": {
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "location": "Emplacement"
+    },
+    "form": {
+      "name": "Votre nom",
+      "email": "Votre e-mail",
+      "subject": "Sujet",
+      "message": "Votre message / demande",
+      "button": "Envoyer le message"
+    }
+  }
+}
