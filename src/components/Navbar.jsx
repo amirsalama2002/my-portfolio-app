@@ -20,7 +20,7 @@ const Navbar = () => {
     { code: 'हिंदी', label: 'हिंदी', flag: 'हिंदी' },    //(الهندية)
     { code: 'cn', label: 'Zhōngwén', flag: '中文' }, //(الصينية)
     { code: 'esp', label: 'Española', flag: 'ESP' }, //(الإسبانية)
-    { code: 'it', label: 'Italiano', flag: 'IT' }, //(الإسبانية)
+    { code: 'it', label: 'Italiano', flag: 'IT' }, //(الإيطالية)
   ];
 
   const currentLang = languages.find(l => l.code === i18n.language) || languages[0];
