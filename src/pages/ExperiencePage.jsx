@@ -206,6 +206,12 @@ const ExperiencePage = () => {
             github: null,
             liveLink: 'https://spandex.netlify.app',
         },
+        {
+            title: t('projects.amirsalama.title'),
+            descriptionKey: 'projects.amirsalama.desc',
+            github: null,
+            liveLink: 'https://amirsalama.netlify.app',
+        },
     ];
 
     return (
