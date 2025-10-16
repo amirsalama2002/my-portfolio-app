@@ -238,10 +238,10 @@ const ObjectiveSection = ({ isRTL }) => {
 
         <motion.div variants={contentVariants} className="mt-10">
           <a
-            href="/path/to/your/CV.pdf"
-            download
-            className="inline-flex items-center px-8 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 rounded-full text-white transition duration-300 transform hover:scale-105 shadow-lg"
-          >
+          href="https://drive.google.com/uc?export=download&id=1KR6LlZIS_kGasJICIgjxDnpe7uc5ScTf"
+          download
+  className="inline-flex items-center px-8 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 rounded-full text-white transition duration-300 transform hover:scale-105 shadow-lg"
+>
             <Download className="w-5 h-5 mr-3 rtl:ml-3 rtl:mr-0" />
             {t('about.download_cv')}
           </a>
