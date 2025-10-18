@@ -13,6 +13,19 @@
     "view_work": "View Work",
     "my_name": "Amir Salama"
   },
+  "lango":{
+    "en":"English",
+    "ar":"Arabic",
+    "fr":"French",
+    "de":"German",
+    "ru":"Russian",
+    "pt":"Portuguese",
+    "hi":"Hindi",
+    "cn":"Chinese",
+    "es":"Spanish",
+    "it":"Italian"
+
+  },
   "home_sections": {
     "stats": {
       "title": "My Achievements & Impact",
@@ -97,7 +110,8 @@
     "info": {
       "email": "Email Address",
       "phone": "Phone Number",
-      "location": "Location"
+      "location": "Location",
+      "workHous" :"Working Hours"
     },
     "form": {
       "name": "Your Name",

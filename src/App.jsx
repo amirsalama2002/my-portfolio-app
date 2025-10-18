@@ -8,6 +8,7 @@ import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage'; // سنقوم بإنشائها لاحقا
 import ContactPage from './pages/ContactPage';       // سنقوم بإنشائها لاحقا
 import Footer from './Footer/Footer';
+import ConcatTestContactUs from "./pages/ConcatTestContactUs"
 
 function App() {
   
@@ -34,6 +35,7 @@ function App() {
             {/* المسارات الأخرى (سنضيفها لاحقًا) */}
             <Route path="/experience" element={<ExperiencePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/amir" element={<ConcatTestContactUs />} />
 
           </Routes>
         </main>

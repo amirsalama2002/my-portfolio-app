@@ -13,6 +13,18 @@
     "view_work": "Ver Trabajos",
     "my_name": "Amir Salama"
   },
+  "lango": {
+  "en": "Inglés",
+  "ar": "Árabe",
+  "fr": "Francés",
+  "de": "Alemán",
+  "ru": "Ruso",
+  "pt": "Portugués",
+  "hi": "Hindi",
+  "cn": "Chino",
+  "es": "Español",
+  "it": "Italiano"
+},
   "home_sections": {
     "stats": {
       "title": "Mis Logros e Impacto",

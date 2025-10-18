@@ -11,16 +11,16 @@ const Navbar = () => {
   const isRTL = i18n.language === 'ar';
 
   const languages = [
-    { code: 'en', label: 'English', flag: 'EN' },    //(الإنجليزية)
-    { code: 'ar', label: 'العربية', flag: 'SA' },   // العربية
-    { code: 'fr', label: 'Français', flag: 'FR' },  //(الفرنسية)
-    { code: 'de', label: 'Deutsch', flag: 'De' },   //(الألمانية)
-    { code: 'ru', label: 'Россия', flag: 'RU' },    //(الروسية)
-    { code: 'pt', label: 'Portuguesa', flag: 'PT' }, // (البرتغالية)
-    { code: 'हिंदी', label: 'हिंदी', flag: 'हिंदी' },    //(الهندية)
-    { code: 'cn', label: 'Zhōngwén', flag: '中文' }, //(الصينية)
-    { code: 'esp', label: 'Española', flag: 'ESP' }, //(الإسبانية)
-    { code: 'it', label: 'Italiano', flag: 'IT' }, //(الإيطالية)
+    { code: 'en', label:t('lango.en'), flag: 'En' },   //(الإنجليزية)
+    { code: 'ar', label: t('lango.ar'), flag: 'AR' },   // العربية
+    { code: 'fr', label: t('lango.fr'), flag: 'FR' },  //(الفرنسية)
+    { code: 'de', label: t('lango.de'), flag: 'GE' },   //(الألمانية)
+    { code: 'ru', label: t('lango.ru'), flag: 'RU' },    //(الروسية)
+    { code: 'pt', label: t('lango.pt'), flag: 'PT' }, // (البرتغالية)
+    { code: 'हिंदी', label: t('lango.hi'), flag: 'हिंदी' },    //(الهندية)
+    { code: 'cn', label: t('lango.cn'), flag: '中文' }, //(الصينية)
+    { code: 'esp', label: t('lango.es'), flag: 'ESP' }, //(الإسبانية)
+    { code: 'it', label:  t('lango.it'), flag: 'IT' }, //(الإيطالية)
   ];
 
   const currentLang = languages.find(l => l.code === i18n.language) || languages[0];
@@ -37,6 +37,7 @@ const Navbar = () => {
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.services'), path: '/experience' },
     { name: t('nav.contact'), path: '/contact' },
+    // { name: t('ContactTest'), path: '/amir' },
   ];
 
   const navbarVariants = {

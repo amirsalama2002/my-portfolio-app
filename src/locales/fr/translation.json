@@ -13,6 +13,19 @@
     "view_work": "Voir les projets",
     "my_name": "Amir Salama"
   },
+  "lango": {
+  "en": "Anglais",
+  "ar": "Arabe",
+  "fr": "Français",
+  "de": "Allemand",
+  "ru": "Russe",
+  "pt": "Portugais",
+  "hi": "Hindi",
+  "cn": "Chinois",
+  "es": "Espagnol",
+  "it": "Italien"
+},
+
   "home_sections": {
     "stats": {
       "title": "Mes réalisations et mon impact",

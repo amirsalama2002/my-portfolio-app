@@ -13,6 +13,18 @@
     "view_work": "查看作品",
     "my_name": "Amir Salama"
   },
+  "lango": {
+  "en": "英语",
+  "ar": "阿拉伯语",
+  "fr": "法语",
+  "de": "德语",
+  "ru": "俄语",
+  "pt": "葡萄牙语",
+  "hi": "印地语",
+  "cn": "中文",
+  "es": "西班牙语",
+  "it": "意大利语"
+},
   "home_sections": {
     "stats": {
       "title": "我的成就与影响",

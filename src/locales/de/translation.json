@@ -13,6 +13,19 @@
     "view_work": "Arbeiten ansehen",
     "my_name": "Amir Salama"
   },
+  "lango": {
+  "en": "Englisch",
+  "ar": "Arabisch",
+  "fr": "Französisch",
+  "de": "Deutsch",
+  "ru": "Russisch",
+  "pt": "Portugiesisch",
+  "hi": "Hindi",
+  "cn": "Chinesisch",
+  "es": "Spanisch",
+  "it": "Italienisch"
+},
+
   "home_sections": {
     "stats": {
       "title": "Meine Erfolge & Wirkung",
