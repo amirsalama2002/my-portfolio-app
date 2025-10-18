@@ -26,3 +26,33 @@ body {
   background-size: 400% 400%; /* تمديد الخلفية لتغطية الحركة */
   animation: gradient-shift 15s ease infinite; /* تطبيق الحركة */
 }
+/* 🔹 Toast Slide Down Animation */
+@keyframes toast-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toast-slide-up {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+}
+
+/* 🔹 تخصيص حركة التوست */
+.react-hot-toast {
+  animation: toast-slide-down 0.4s ease-out;
+}
+.react-hot-toast--exit {
+  animation: toast-slide-up 0.4s ease-in forwards;
+}

@@ -1,5 +1,5 @@
 // src/App.jsx (تحديث كامل)
-
+import "./index.css";
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // <--- (1) استيراد الـ Router والـ Routes
 import Navbar from './components/Navbar';
