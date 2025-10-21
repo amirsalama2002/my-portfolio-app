@@ -350,11 +350,19 @@ const HomePage = () => {
                backdrop-blur-sm"
   >
     {/* الصورة */}
-    <img
-      src="/WhatsApp Image 2025-10-13 at 2.27.15 AM.jpeg"
-      alt="Amir Salama - Full Stack Developer"
-      className="w-full h-full object-cover rounded-full"
-    />
+    <motion.img
+  src="/WhatsApp Image 2025-10-13 at 2.27.15 AM.jpeg"
+  alt="Amir Salama - Full Stack Developer"
+  className="w-full h-full object-cover rounded-full"
+  animate={{
+    scale: [1, 1.05, 1],
+  }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+/>
 
     {/* تأثير إضاءة نابضة خارجية */}
     <div className="absolute inset-0 rounded-full border-2 border-blue-400/40 animate-pulse" />

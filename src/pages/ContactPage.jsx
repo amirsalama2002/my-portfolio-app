@@ -1,9 +1,7 @@
-// src/pages/ContactPage.jsx
-
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-// أيقونات للتواصل
+import toast from 'react-hot-toast'; // ✅ استيراد مكتبة Toast
 import { Mail, Phone, MapPin, Send } from 'lucide-react'; 
 
 const ContactPage = () => {
@@ -17,35 +15,49 @@ const ContactPage = () => {
     message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
 
-  // دالة تحديث حالة النموذج
+  // تحديث حالة الحقول
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // دالة الإرسال (هذا هو المكان الذي ستربط فيه بـ Laravel API)
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // دالة الإرسال الرئيسية
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     setIsSubmitting(true);
-    setSubmitMessage(t('contact.submitting'));
-    
-    // ----------------------------------------------------------------
-    // !!! نقطة التكامل مع Laravel !!!
-    // هنا ستضع كود إرسال البيانات (formData) إلى واجهة Laravel API
-    // ----------------------------------------------------------------
-    
-    console.log('Form Data Sent:', formData); 
 
-    // محاكاة عملية الإرسال
-    await new Promise(resolve => setTimeout(resolve, 2000)); 
-    
+    const formDataToSend = new FormData(event.target);
+    formDataToSend.append("access_key", "427a63d8-28bd-422e-a814-7323aa64496a");
+
+    const object = Object.fromEntries(formDataToSend);
+    const json = JSON.stringify(object);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: json,
+      }).then((res) => res.json());
+
+      if (res.success) {
+        console.log("✅ Success:", res);
+        toast.success(t('contact.success_message') || 'تم الإرسال بنجاح 🎉');
+        setFormData({ name: '', email: '', subject: '', message: '' }); // ← تفريغ النموذج
+      } else {
+        toast.error(t('contact.error_message') || 'حدث خطأ أثناء الإرسال 😞');
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error('حدث خطأ في الاتصال بالشبكة ⚠️');
+    }
+
     setIsSubmitting(false);
-    setSubmitMessage(t('contact.success_message'));
-    setFormData({ name: '', email: '', subject: '', message: '' }); // تفريغ النموذج
   };
-  
-  // إعدادات Framer Motion
+
+  // إعدادات الأنيميشن
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
@@ -56,7 +68,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="pt-20 bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-white">
+    <div className="pt-2 bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-white">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         
         <h2 className="text-5xl font-extrabold text-center mb-16 text-blue-600 dark:text-blue-400">
@@ -64,13 +76,13 @@ const ContactPage = () => {
         </h2>
         
         <motion.div 
-            className="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl"
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl"
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
         >
           
-          {/* 1. معلومات الاتصال الجانبية */}
+          {/* 1. معلومات الاتصال */}
           <motion.div className="lg:col-span-1 space-y-8" variants={containerVariants}>
             <motion.div variants={itemVariants} className="flex items-start space-x-4 dark:space-x-reverse">
               <Mail className="w-6 h-6 text-blue-500 mt-1" />
@@ -95,10 +107,9 @@ const ContactPage = () => {
                 <p className="text-gray-600 dark:text-gray-300">Cairo, Egypt</p>
               </div>
             </motion.div>
-            
           </motion.div>
           
-          {/* 2. نموذج الاتصال (Contact Form) */}
+          {/* 2. نموذج الاتصال */}
           <motion.div className="lg:col-span-2" variants={itemVariants}>
             <form onSubmit={handleSubmit} className="space-y-6">
               
@@ -110,7 +121,8 @@ const ContactPage = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
+                  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
                 />
                 <input
                   type="email"
@@ -119,7 +131,8 @@ const ContactPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
+                  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
                 />
               </div>
               
@@ -130,7 +143,8 @@ const ContactPage = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
+                focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
               />
               
               <textarea
@@ -140,30 +154,26 @@ const ContactPage = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
+                focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
               ></textarea>
               
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center space-x-2 px-6 py-3 text-lg font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed"
+                className="w-full flex cursor-pointer items-center justify-center space-x-2 px-6 py-3 text-lg 
+                font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 
+                transition duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? t('contact.sending') : (
-                    <>
-                        <Send size={20} />
-                        <span>{t('contact.form.button')}</span>
-                    </>
+                  <>
+                    <Send size={20} />
+                    <span>{t('contact.form.button')}</span>
+                  </>
                 )}
               </button>
-
-              {submitMessage && (
-                <p className={`text-center font-semibold ${submitMessage.includes(t('contact.success_message')) ? 'text-green-600 dark:text-green-400' : 'text-yellow-600 dark:text-yellow-400'}`}>
-                  {submitMessage}
-                </p>
-              )}
             </form>
           </motion.div>
-          
         </motion.div>
       </div>
     </div>
