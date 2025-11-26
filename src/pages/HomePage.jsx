@@ -351,7 +351,7 @@ const HomePage = () => {
   >
     {/* الصورة */}
     <motion.img
-  src="/WhatsApp Image 2025-10-13 at 2.27.15 AM.jpeg"
+  src="../../public/Gemini_Generated_Image_qgl5alqgl5alqgl5.png"
   alt="Amir Salama - Full Stack Developer"
   className="w-full h-full object-cover rounded-full"
   animate={{
