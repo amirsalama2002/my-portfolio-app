@@ -51,6 +51,7 @@ const Navbar = () => {
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.services'), path: '/experience' },
     { name: t('nav.contact'), path: '/contact' },
+    { name: t('nav.prodect'), path: '/prodect' },
   ];
 
   const navbarVariants = {

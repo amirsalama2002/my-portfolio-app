@@ -3,7 +3,8 @@
     "home": "Home",
     "about": "About",
     "services": "Experience",
-    "contact": "Contact"
+    "contact": "Contact",
+    "prodect" : "Project"
   },
   "home": {
     "greeting": "Hello, I am",

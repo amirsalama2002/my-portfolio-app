@@ -8,7 +8,8 @@ import AboutPage from './pages/AboutPage';
 import ExperiencePage from './pages/ExperiencePage'; // سنقوم بإنشائها لاحقا
 import ContactPage from './pages/ContactPage';       // سنقوم بإنشائها لاحقا
 import Footer from './Footer/Footer';
-import ConcatTestContactUs from "./pages/ConcatTestContactUs"
+import ConcatTestContactUs from "./pages/ConcatTestContactUs";
+import Prodect from "./Project/Prodect";
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
             
             {/* صفحة عني */}
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/prodect" element={<Prodect />} />
 
             {/* المسارات الأخرى (سنضيفها لاحقًا) */}
             <Route path="/experience" element={<ExperiencePage />} />

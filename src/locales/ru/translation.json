@@ -3,7 +3,8 @@
     "home": "Главная",
     "about": "Обо мне",
     "services": "Опыт",
-    "contact": "Контакты"
+    "contact": "Контакты",
+    "prodect" : "Продукт"
   },
   "home": {
     "greeting": "Привет, я",

@@ -3,7 +3,8 @@
     "home": "Início",
     "about": "Sobre",
     "services": "Experiência",
-    "contact": "Contato"
+    "contact": "Contato",
+    "prodect" : "Produto"
   },
   "home": {
     "greeting": "Olá, eu sou",
