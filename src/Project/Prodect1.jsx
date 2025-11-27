@@ -7,11 +7,11 @@ const images = [
   "https://framerusercontent.com/images/Qrhi7ilDJX86hnzulv0A3fiZYg0.jpg?scale-down-to=2048",
   "https://framerusercontent.com/images/bD4aXTtOtS4WOus2QsRkuvTGRSI.png",
   "https://framerusercontent.com/images/2qDJQB7puAsmAKujwytFxfz11w.jpg",
-
 ];
 
 export default function Prodect1() {
   const [active, setActive] = useState(0);
+
   return (
     <div
       className="
@@ -53,7 +53,12 @@ export default function Prodect1() {
         >
           <motion.img
             src={src}
-            alt=""
+            alt="project image"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
+            srcSet={`${src} 400w, ${src} 800w, ${src} 1200w`}
+            sizes="(max-width: 768px) 400px, (max-width: 1200px) 800px, 1200px"
             className="w-full h-full object-cover"
             animate={{
               filter:
@@ -61,9 +66,7 @@ export default function Prodect1() {
                   ? "brightness(1.2) saturate(1.2)"
                   : "brightness(0.75)",
             }}
-            transition={{
-              duration: 0.5,
-            }}
+            transition={{ duration: 0.5 }}
           />
         </motion.div>
       ))}

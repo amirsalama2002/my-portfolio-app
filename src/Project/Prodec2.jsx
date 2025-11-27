@@ -7,7 +7,6 @@ const images = [
   "https://cdn.dribbble.com/userupload/7766740/file/original-aa2893c6f39b7f9e652d393897c93ad9.jpg?resize=850x638&vertical=center",
   "https://cdn.dribbble.com/userupload/7766738/file/original-03367fd9327b6da0d33a32c70bbde424.jpg?resize=1024x1024&vertical=center",
   "https://cdn.dribbble.com/userupload/31534067/file/original-4ef28a208c6a0b5408a3c061543fc098.png?resize=1024x768&vertical=center",
-
 ];
 
 export default function Prodect1() {
@@ -53,7 +52,12 @@ export default function Prodect1() {
         >
           <motion.img
             src={src}
-            alt=""
+            alt="project preview"
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
+            srcSet={`${src} 400w, ${src} 800w, ${src} 1200w`}
+            sizes="(max-width: 768px) 400px, (max-width: 1200px) 800px, 1200px"
             className="w-full h-full object-cover"
             animate={{
               filter:
@@ -61,9 +65,7 @@ export default function Prodect1() {
                   ? "brightness(1.2) saturate(1.2)"
                   : "brightness(0.75)",
             }}
-            transition={{
-              duration: 0.5,
-            }}
+            transition={{ duration: 0.5 }}
           />
         </motion.div>
       ))}

@@ -350,9 +350,18 @@ const HomePage = () => {
                backdrop-blur-sm"
   >
     {/* الصورة */}
-    <motion.img
+   <motion.img
   src="/Gemini_Generated_Image_qgl5alqgl5alqgl5.png"
   alt="Amir Salama - Full Stack Developer"
+  loading="lazy"
+  decoding="async"
+  fetchPriority="low"
+  srcSet="
+    /Gemini_Generated_Image_qgl5alqgl5alqgl5.png 600w,
+    /Gemini_Generated_Image_qgl5alqgl5alqgl5.png 1000w,
+    /Gemini_Generated_Image_qgl5alqgl5alqgl5.png 1500w
+  "
+  sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 1000px"
   className="w-full h-full object-cover rounded-full"
   animate={{
     scale: [1, 1.05, 1],
@@ -363,6 +372,7 @@ const HomePage = () => {
     ease: "easeInOut",
   }}
 />
+
 
     {/* تأثير إضاءة نابضة خارجية */}
     <div className="absolute inset-0 rounded-full border-2 border-blue-400/40 animate-pulse" />
