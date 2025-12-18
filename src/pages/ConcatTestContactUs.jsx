@@ -121,7 +121,7 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-xl font-bold">{t("contact.info.phone")}</h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  (+20) 01028975932
+                  +971 50 321 4077
                 </p>
               </div>
             </motion.div>

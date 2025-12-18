@@ -111,8 +111,9 @@
     "info": {
       "email": "Email Address",
       "phone": "Phone Number",
-      "location": "Location",
-      "workHous" :"Working Hours"
+      "location": "location",
+      "mopile" : "+971 50 321 4077",
+      "city" : "UAE, Dubai"
     },
     "form": {
       "name": "Your Name",

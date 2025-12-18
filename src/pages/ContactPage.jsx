@@ -96,7 +96,7 @@ const ContactPage = () => {
               <Phone className="w-6 h-6 text-blue-500 mt-1" />
               <div>
                 <h3 className="text-xl font-bold">{t('contact.info.phone')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">(+20) 01028975932</p>
+                <p className="text-gray-600 dark:text-gray-300">{t('contact.info.mopile')}</p>
               </div>
             </motion.div>
             
@@ -104,7 +104,7 @@ const ContactPage = () => {
               <MapPin className="w-6 h-6 text-blue-500 mt-1" />
               <div>
                 <h3 className="text-xl font-bold">{t('contact.info.location')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">Cairo, Egypt</p>
+                <p className="text-gray-600 dark:text-gray-300">{t('contact.info.city')}</p>
               </div>
             </motion.div>
           </motion.div>
