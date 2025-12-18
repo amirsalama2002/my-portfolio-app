@@ -1,183 +1,138 @@
-import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
-import toast from 'react-hot-toast'; // ✅ استيراد مكتبة Toast
-import { Mail, Phone, MapPin, Send } from 'lucide-react'; 
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+import toast from "react-hot-toast";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
 
-const ContactPage = () => {
-  const { t } = useTranslation();
-  
-  // حالة النموذج لتجميع البيانات
+export default function ContactPage() {
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
+
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  // تحديث حالة الحقول
-  const handleChange = (e) => {
+  const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
 
-  // دالة الإرسال الرئيسية
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-    setIsSubmitting(true);
-
-    const formDataToSend = new FormData(event.target);
-    formDataToSend.append("access_key", "427a63d8-28bd-422e-a814-7323aa64496a");
-
-    const object = Object.fromEntries(formDataToSend);
-    const json = JSON.stringify(object);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: json,
-      }).then((res) => res.json());
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          access_key: "427a63d8-28bd-422e-a814-7323aa64496a",
+        }),
+      }).then((r) => r.json());
 
       if (res.success) {
-        console.log("✅ Success:", res);
-        toast.success(t('contact.success_message') || 'تم الإرسال بنجاح 🎉');
-        setFormData({ name: '', email: '', subject: '', message: '' }); // ← تفريغ النموذج
-      } else {
-        toast.error(t('contact.error_message') || 'حدث خطأ أثناء الإرسال 😞');
-      }
-    } catch (error) {
-      console.error(error);
-      toast.error('حدث خطأ في الاتصال بالشبكة ⚠️');
+        toast.success(t("contact.success_message") || "Message sent successfully 🚀");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else throw new Error();
+    } catch {
+      toast.error(t("contact.error_message") || "Something went wrong ❌");
     }
 
-    setIsSubmitting(false);
+    setLoading(false);
   };
 
-  // إعدادات الأنيميشن
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
-  };
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  const fadeUp = {
+    hidden: { opacity: 0, y: 24 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
   };
 
   return (
-    <div className="pt-2 bg-gray-100 dark:bg-gray-900 min-h-screen text-gray-800 dark:text-white">
-      <div className="container mx-auto px-4 py-12 max-w-6xl">
-        
-        <h2 className="text-5xl font-extrabold text-center mb-16 text-blue-600 dark:text-blue-400">
-          {t('nav.contact')}
-        </h2>
-        
-        <motion.div 
-          className="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl"
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
+    <section className="min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 text-white py-24">
+      <div className="max-w-6xl mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center text-5xl font-extrabold mb-16 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
         >
-          
-          {/* 1. معلومات الاتصال */}
-          <motion.div className="lg:col-span-1 space-y-8" variants={containerVariants}>
-            <motion.div variants={itemVariants} className="flex items-start space-x-4 dark:space-x-reverse">
-              <Mail className="w-6 h-6 text-blue-500 mt-1" />
-              <div>
-                <h3 className="text-xl font-bold">{t('contact.info.email')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">hamirsalama@gmail.com</p>
-              </div>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="flex items-start space-x-4 dark:space-x-reverse">
-              <Phone className="w-6 h-6 text-blue-500 mt-1" />
-              <div>
-                <h3 className="text-xl font-bold">{t('contact.info.phone')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{t('contact.info.mopile')}</p>
-              </div>
-            </motion.div>
-            
-            <motion.div variants={itemVariants} className="flex items-start space-x-4 dark:space-x-reverse">
-              <MapPin className="w-6 h-6 text-blue-500 mt-1" />
-              <div>
-                <h3 className="text-xl font-bold">{t('contact.info.location')}</h3>
-                <p className="text-gray-600 dark:text-gray-300">{t('contact.info.city')}</p>
-              </div>
-            </motion.div>
+          {t("nav.contact")}
+        </motion.h2>
+
+        <div className="grid lg:grid-cols-3 gap-10 bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-10 shadow-2xl">
+          {/* Info */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            className="space-y-8"
+          >
+            <Info icon={<Mail />} title={t("contact.info.email")} value="hamirsalama@gmail.com" />
+            <Info icon={<Phone />} title={t("contact.info.phone")} value={t("contact.info.mopile")} />
+            <Info icon={<MapPin />} title={t("contact.info.location")} value={t("contact.info.city")} />
           </motion.div>
-          
-          {/* 2. نموذج الاتصال */}
-          <motion.div className="lg:col-span-2" variants={itemVariants}>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder={t('contact.form.name')}
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder={t('contact.form.email')}
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                  focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
-                />
-              </div>
-              
-              <input
-                type="text"
-                name="subject"
-                placeholder={t('contact.form.subject')}
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
-              />
-              
-              <textarea
-                name="message"
-                placeholder={t('contact.form.message')}
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg 
-                focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white transition"
-              ></textarea>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full flex cursor-pointer items-center justify-center space-x-2 px-6 py-3 text-lg 
-                font-semibold bg-blue-600 text-white rounded-lg hover:bg-blue-700 
-                transition duration-300 disabled:bg-gray-500 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? t('contact.sending') : (
-                  <>
-                    <Send size={20} />
-                    <span>{t('contact.form.button')}</span>
-                  </>
-                )}
-              </button>
-            </form>
-          </motion.div>
-        </motion.div>
+
+          {/* Form */}
+          <motion.form
+            onSubmit={handleSubmit}
+            variants={fadeUp}
+            initial="hidden"
+            animate="show"
+            className="lg:col-span-2 space-y-6"
+            dir={isRTL ? "rtl" : "ltr"}
+          >
+            <div className="grid md:grid-cols-2 gap-6">
+              <Input name="name" value={formData.name} onChange={handleChange} placeholder={t("contact.form.name")} />
+              <Input name="email" type="email" value={formData.email} onChange={handleChange} placeholder={t("contact.form.email")} />
+            </div>
+
+            <Input name="subject" value={formData.subject} onChange={handleChange} placeholder={t("contact.form.subject")} />
+
+            <textarea
+              name="message"
+              rows="5"
+              required
+              value={formData.message}
+              onChange={handleChange}
+              placeholder={t("contact.form.message")}
+              className="w-full rounded-xl bg-white/10 border border-white/10 px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none transition"
+            />
+
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.97 }}
+              disabled={loading}
+              className="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 py-3 text-lg font-semibold shadow-lg disabled:opacity-50"
+            >
+              {loading ? t("contact.sending") : <><Send size={18} /> {t("contact.form.button")}</>}
+            </motion.button>
+          </motion.form>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Input({ type = "text", ...props }) {
+  return (
+    <input
+      type={type}
+      required
+      className="w-full rounded-xl bg-white/10 border border-white/10 px-4 py-3 focus:ring-2 focus:ring-blue-500 outline-none transition"
+      {...props}
+    />
+  );
+}
+
+function Info({ icon, title, value }) {
+  return (
+    <div className="flex items-start gap-4">
+      <div className="p-3 rounded-xl bg-blue-500/20 text-blue-400">{icon}</div>
+      <div>
+        <h4 className="font-bold text-lg">{title}</h4>
+        <p className="text-gray-300">{value}</p>
       </div>
     </div>
   );
-};
-
-export default ContactPage;
+}

@@ -298,91 +298,103 @@ const HomePage = () => {
     return (
         <>
             {/* -------------------- 1. سكشن الترحيب (Hero Section) - Grid Layout -------------------- */}
-             <section 
-                id="hero" 
-                className="h-screen bg-gray-900 text-white flex justify-center pt-24 pb-20"
-            >
-                <div className="container mx-auto px-8 max-w-6xl flex-grow"> 
-                    
-                    {/* Grid Layout متجاوب: النص 7/12 والصورة 5/12 */}
-                    <div className={`grid grid-cols-1 md:grid-cols-12 gap-12 items-center h-full`}>
-                        
-                        {/* النص والأزرار (7/12) - لا يوجد تغيير */}
-                        <motion.div
-                            className="md:col-span-7"
-                            initial="hidden"
-                            animate="visible"
-                            variants={containerVariants}
-                        >
-                            <motion.p className={`text-2xl font-light mb-3 text-blue-400 ${isRTL ? 'text-right' : 'text-left'}`} variants={textItemVariants}>{t('home.greeting')}</motion.p>
-                            <motion.h1 className={`text-6xl md:text-7xl font-extrabold mb-4 ${isRTL ? 'text-right' : 'text-left'}`} variants={textItemVariants}>{t('home.name')}</motion.h1>
-                            <motion.h2 className={`text-3xl md:text-4xl font-light text-gray-300 mb-8 ${isRTL ? 'text-right' : 'text-left'}`} variants={textItemVariants}>{t('home.title')}</motion.h2>
-
-                            <motion.div className={`flex mt-10 space-x-4 ${isRTL ? 'justify-end space-x-reverse' : 'justify-start'}`} variants={textItemVariants}>
-                                <Link to="/contact" className="px-8 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 rounded-full transition duration-300 transform hover:scale-105 shadow-xl">{t('home.hire_me')}</Link>
-                                <Link to="/experience" className="px-8 py-3 text-lg font-semibold border-2 border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white rounded-full transition duration-300 transform hover:scale-105">{t('home.view_work')}</Link>
-                            </motion.div>
-                        </motion.div>
-
-                        {/* 2. الصورة الشخصية (5/12) - تطبيق الحركة المستمرة والـ Hover/Tap */}
-                          {/* الصورة الشخصية (5/12) - احترافية بالحركة والإضاءة */}
-                           <motion.div
-  className="md:col-span-5 flex justify-center items-center"
-  initial={{ opacity: 0, scale: 0.8, y: 50 }}
-  animate={{ opacity: 1, scale: 1, y: 0 }}
-  transition={{ duration: 1, ease: "easeOut" }}
+             {/* -------------------- Hero Section -------------------- */}
+<section 
+  id="hero" 
+  className="h-screen bg-gray-900 text-white flex justify-center pt-24 pb-20"
 >
-  <motion.div
-    whileHover={{ scale: 1.05, rotate: 0 }}
-    whileTap={{ scale: 0.97 }}
-    animate={{
-      y: [0, -10, 0],
-      transition: {
-        duration: 4,
-        repeat: Infinity,
-        ease: "easeInOut",
-      },
-    }}
-    className="relative w-64 h-64 md:w-80 md:h-80 
-               rounded-full border-4 border-blue-500 
-               shadow-[0_0_40px_rgba(37,99,235,0.5)]
-               overflow-hidden bg-gradient-to-br from-blue-600/20 to-blue-900/30
-               backdrop-blur-sm"
-  >
-    {/* الصورة */}
-   <motion.img
-  src="/Gemini_Generated_Image_qgl5alqgl5alqgl5.png"
-  alt="Amir Salama - Full Stack Developer"
-  loading="lazy"
-  decoding="async"
-  fetchPriority="low"
-  srcSet="
-    /Gemini_Generated_Image_qgl5alqgl5alqgl5.png 600w,
-    /Gemini_Generated_Image_qgl5alqgl5alqgl5.png 1000w,
-    /Gemini_Generated_Image_qgl5alqgl5alqgl5.png 1500w
-  "
-  sizes="(max-width: 768px) 300px, (max-width: 1200px) 600px, 1000px"
-  className="w-full h-full object-cover rounded-full"
-  animate={{
-    scale: [1, 1.05, 1],
-  }}
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    ease: "easeInOut",
-  }}
-/>
+  <div className="container mx-auto px-8 max-w-6xl flex-grow"> 
+    
+    {/* Grid Layout متجاوب: النص 7/12 والصورة 5/12 */}
+    <div className={`grid grid-cols-1 md:grid-cols-12 gap-12 items-center h-full`}>
+      
+      {/* النص والأزرار (7/12) */}
+      <motion.div
+        className="md:col-span-7"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { staggerChildren: 0.15, delayChildren: 0.3 } }
+        }}
+      >
+        <motion.p 
+          className="text-2xl font-light mb-3 text-blue-400"
+          variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 100, damping: 12 } } }}
+        >
+          {t('home.greeting')}
+        </motion.p>
+        <motion.h1 
+          className="text-6xl md:text-7xl font-extrabold mb-4"
+          variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 100, damping: 12 } } }}
+        >
+          {t('home.name')}
+        </motion.h1>
+        <motion.h2 
+          className="text-3xl md:text-4xl font-light text-gray-300 mb-8"
+          variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { type: "spring", stiffness: 100, damping: 12 } } }}
+        >
+          {t('home.title')}
+        </motion.h2>
 
+        <motion.div className="flex mt-10 space-x-4" variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0, transition: { delay: 0.2 } } }}>
+          <Link 
+            to="/contact" 
+            className="px-8 py-3 text-lg font-semibold bg-blue-600 hover:bg-blue-700 rounded-full transition duration-300 transform hover:scale-105 shadow-xl"
+          >
+            {t('home.hire_me')}
+          </Link>
+          <Link 
+            to="/experience" 
+            className="px-8 py-3 text-lg font-semibold border-2 border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white rounded-full transition duration-300 transform hover:scale-105"
+          >
+            {t('home.view_work')}
+          </Link>
+        </motion.div>
+      </motion.div>
 
-    {/* تأثير إضاءة نابضة خارجية */}
-    <div className="absolute inset-0 rounded-full border-2 border-blue-400/40 animate-pulse" />
-  </motion.div>
-                          </motion.div>
+      {/* الصورة الشخصية (5/12) - مخفية على الموبايل */}
+      <motion.div
+        className="hidden md:flex md:col-span-5 justify-center items-center"
+        initial={{ opacity: 0, scale: 0.8, y: 50 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.97 }}
+          animate={{
+            y: [0, -10, 0],
+            transition: {
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          }}
+          className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-blue-500 shadow-[0_0_40px_rgba(37,99,235,0.5)] overflow-hidden bg-gradient-to-br from-blue-600/20 to-blue-900/30 backdrop-blur-sm"
+        >
+          <motion.img
+            src="/Gemini_Generated_Image_qgl5alqgl5alqgl5.png"
+            alt="Amir Salama - Full Stack Developer"
+            className="w-full h-full object-cover rounded-full"
+            animate={{
+              scale: [1, 1.05, 1],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          {/* تأثير إضاءة نابضة خارجية */}
+          <div className="absolute inset-0 rounded-full border-2 border-blue-400/40 animate-pulse" />
+        </motion.div>
+      </motion.div>
 
-                        
-                    </div>
-                </div>
-            </section>
+    </div>
+  </div>
+</section>
+
             
             {/* -------------------- 2. سكشن الإحصائيات (Stats Section) -------------------- */}
             <StatsSection isRTL={isRTL} /> 
