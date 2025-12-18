@@ -10,6 +10,7 @@ import ContactPage from './pages/ContactPage';       // سنقوم بإنشائ�
 import Footer from './Footer/Footer';
 import ConcatTestContactUs from "./pages/ConcatTestContactUs";
 import Prodect from "./Project/Prodect";
+import "./App.css";
 
 function App() {
   
@@ -17,8 +18,8 @@ function App() {
 
   return (
     // <Router> لتغليف التطبيق
-    <Router className="h-screen bg-green-900 text-white flex justify-center pt-24 pb-20">
-      <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <Router>
+      <div id="hassan" className="min-h-screen bg-gray-100 dark:bg-gray-900">
         
         {/* شريط التنقل (Navbar) يبقى في الخارج ليظهر في كل الصفحات */}
         <Navbar />
