@@ -2,34 +2,30 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const images = [
-  "https://www.wpp.com/-/media/project/wpp/images/sustainability/2025/wpp_ar_2568x1445_02.png",
-  "https://www.wpp.com/-/media/project/wpp/images/news/2025/wpp-open-pro_thumbnail_1800x1200.png?h=600&w=900&la=en-US&hash=E09CB7013415591F6E97BA05226898C2",
-  "https://framerusercontent.com/images/Qrhi7ilDJX86hnzulv0A3fiZYg0.jpg?scale-down-to=2048",
-  "https://framerusercontent.com/images/bD4aXTtOtS4WOus2QsRkuvTGRSI.png",
-  "https://framerusercontent.com/images/2qDJQB7puAsmAKujwytFxfz11w.jpg",
+  "/project1.png",
+  "https://cdn.dribbble.com/userupload/42933287/file/original-ec8f0d04927196d74cec61452e8cae6e.png?resize=1024x768&vertical=center",
+  "https://cdn.dribbble.com/userupload/7766740/file/original-aa2893c6f39b7f9e652d393897c93ad9.jpg?resize=850x638&vertical=center",
+  "https://cdn.dribbble.com/userupload/7766738/file/original-03367fd9327b6da0d33a32c70bbde424.jpg?resize=1024x1024&vertical=center",
+  "https://cdn.dribbble.com/userupload/31534067/file/original-4ef28a208c6a0b5408a3c061543fc098.png?resize=1024x768&vertical=center",
 ]
 
-/*
-  PRO TAILWIND EXPANDING GALLERY
-  - SaaS / Agency level UI
-  - Flex-grow animation (stable)
-  - Glassmorphism container
-  - Hover / Click support
-  - Mobile swipe friendly
-*/
+/**
+ * Tailwind PRO – Expanding Gallery (Stable)
+ * - flexGrow animation (no layout jump)
+ * - glassmorphism + glow
+ * - hover & click
+ * - mobile snap
+ */
 
-export default function ProductGallery() {
+export default function Prodect1() {
   const [active, setActive] = useState(0)
 
   return (
     <section className="relative mx-auto mt-24 max-w-6xl px-4">
-      {/* Ambient Glow */}
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-blue-600/10 via-indigo-600/10 to-purple-600/10 blur-3xl" />
+      {/* ambient glow */}
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-indigo-500/10 via-sky-500/10 to-fuchsia-500/10 blur-3xl" />
 
-      <div
-        className="flex h-[220px] md:h-[420px] gap-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory
-        rounded-3xl border border-white/10 bg-slate-900/70 p-4 backdrop-blur-xl shadow-2xl"
-      >
+      <div className="flex h-[220px] md:h-[420px] gap-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory rounded-3xl border border-white/10 bg-slate-900/70 p-4 backdrop-blur-xl shadow-2xl">
         {images.map((src, index) => (
           <motion.div
             key={index}
@@ -39,7 +35,7 @@ export default function ProductGallery() {
             animate={{ flexGrow: active === index ? 4 : 1 }}
             transition={{ duration: 0.55, ease: [0.4, 0, 0.2, 1] }}
           >
-            {/* Dark overlay when inactive */}
+            {/* dim overlay for inactive */}
             <AnimatePresence>
               {active !== index && (
                 <motion.div
@@ -53,12 +49,12 @@ export default function ProductGallery() {
 
             <motion.img
               src={src}
-              alt="project image"
+              alt="project preview"
               loading="lazy"
               decoding="async"
               className="h-full w-full object-cover"
               animate={{
-                scale: active === index ? 1.05 : 1,
+                scale: active === index ? 1.06 : 1,
                 filter:
                   active === index
                     ? "brightness(1.15) saturate(1.15)"
@@ -67,7 +63,7 @@ export default function ProductGallery() {
               transition={{ duration: 0.5 }}
             />
 
-            {/* Caption */}
+            {/* caption */}
             <AnimatePresence>
               {active === index && (
                 <motion.div
@@ -77,11 +73,9 @@ export default function ProductGallery() {
                   className="absolute bottom-4 left-4 right-4 rounded-xl bg-black/60 px-4 py-3 backdrop-blur-md"
                 >
                   <p className="text-sm font-semibold text-white">
-                    Featured Project {index + 1}
+                    Project {index + 1}
                   </p>
-                  <p className="text-xs text-slate-300">
-                    Branding • UI/UX • Digital Experience
-                  </p>
+                  <p className="text-xs text-slate-300">UI / UX • Frontend</p>
                 </motion.div>
               )}
             </AnimatePresence>
