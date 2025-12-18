@@ -17,7 +17,7 @@ function App() {
 
   return (
     // <Router> لتغليف التطبيق
-    <Router>
+    <Router className="dark:bg-gray-900">
       <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
         
         {/* شريط التنقل (Navbar) يبقى في الخارج ليظهر في كل الصفحات */}
