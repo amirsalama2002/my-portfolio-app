@@ -103,7 +103,7 @@ export default function ContactPage() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
               disabled={loading}
-              className="w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 py-3 text-lg font-semibold shadow-lg disabled:opacity-50"
+              className="cursor-pointer w-full flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 py-3 text-lg font-semibold shadow-lg disabled:opacity-50"
             >
               {loading ? t("contact.sending") : <><Send size={18} /> {t("contact.form.button")}</>}
             </motion.button>
