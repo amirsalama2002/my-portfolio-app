@@ -5,9 +5,9 @@ import Prodect3 from './Prodect3'
 export default function Prodect() {
   return (
     <div>
-      <Prodect3/>
-      <Prodec2/>
       <Prodect1/>
+      <Prodec2/>
+      <Prodect3/>
     </div>
   )
 }

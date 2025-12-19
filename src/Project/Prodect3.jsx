@@ -1,31 +1,42 @@
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/project1.png",
-  "https://cdn.dribbble.com/userupload/42933287/file/original-ec8f0d04927196d74cec61452e8cae6e.png?resize=1024x768&vertical=center",
-  "https://cdn.dribbble.com/userupload/7766740/file/original-aa2893c6f39b7f9e652d393897c93ad9.jpg?resize=850x638&vertical=center",
-  "https://cdn.dribbble.com/userupload/7766738/file/original-03367fd9327b6da0d33a32c70bbde424.jpg?resize=1024x1024&vertical=center",
-  "https://cdn.dribbble.com/userupload/31534067/file/original-4ef28a208c6a0b5408a3c061543fc098.png?resize=1024x768&vertical=center",
-]
-
-/**
- * Tailwind PRO – Expanding Gallery (Stable)
- * - flexGrow animation (no layout jump)
- * - glassmorphism + glow
- * - hover & click
- * - mobile snap
- */
+  "https://cdn.dribbble.com/userupload/12590806/file/original-c3c014ab30a422c3f95ac2e33bad7819.jpg?resize=400x0",
+  "https://catchthemes.com/wp-content/uploads/2022/06/Costello-Dark-Dark-Demo.jpg",
+  "https://y4pdgnepgswqffpt.public.blob.vercel-storage.com/templates/55298/maximux-GwL9X3tjaLGyBtKLGDCMpWjsuQ7KnB",
+  "https://framerusercontent.com/images/ZVF7fMWHhogqf1U4Up595M8Yp4.jpg?width=1200&height=1440",
+  "https://inkbotdesign.com/wp-content/uploads/2021/02/dark-mode-web-design-trend.webp",
+];
 
 export default function Prodect3() {
-  const [active, setActive] = useState(0)
+  const [active, setActive] = useState(0);
+  const scrollRef = useRef(null);
+
+  // Loop auto-scroll for mobile
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActive((prev) => (prev + 1) % images.length);
+      if (scrollRef.current) {
+        scrollRef.current.scrollTo({
+          left: active * scrollRef.current.offsetWidth / 3,
+          behavior: "smooth",
+        });
+      }
+    }, 4000); // كل 4 ثواني
+    return () => clearInterval(interval);
+  }, [active]);
 
   return (
     <section className="relative mx-auto mt-24 max-w-6xl px-4">
       {/* ambient glow */}
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-indigo-500/10 via-sky-500/10 to-fuchsia-500/10 blur-3xl" />
 
-      <div className="flex h-[220px] md:h-[420px] gap-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory rounded-3xl border border-white/10 bg-slate-900/70 p-4 backdrop-blur-xl shadow-2xl">
+      {/* Gallery container */}
+      <div
+        ref={scrollRef}
+        className="flex h-[220px] md:h-[420px] gap-4 overflow-x-auto md:overflow-hidden snap-x snap-mandatory rounded-3xl border border-white/10 bg-slate-900/70 p-4 backdrop-blur-xl shadow-2xl"
+      >
         {images.map((src, index) => (
           <motion.div
             key={index}
@@ -35,7 +46,7 @@ export default function Prodect3() {
             animate={{ flexGrow: active === index ? 4 : 1 }}
             transition={{ duration: 0.55, ease: [0.4, 0, 0.2, 1] }}
           >
-            {/* dim overlay for inactive */}
+            {/* Dim overlay for inactive */}
             <AnimatePresence>
               {active !== index && (
                 <motion.div
@@ -49,7 +60,7 @@ export default function Prodect3() {
 
             <motion.img
               src={src}
-              alt="project preview"
+              alt={`project ${index + 1}`}
               loading="lazy"
               decoding="async"
               className="h-full w-full object-cover"
@@ -63,7 +74,7 @@ export default function Prodect3() {
               transition={{ duration: 0.5 }}
             />
 
-            {/* caption */}
+            {/* Caption */}
             <AnimatePresence>
               {active === index && (
                 <motion.div
@@ -83,5 +94,5 @@ export default function Prodect3() {
         ))}
       </div>
     </section>
-  )
+  );
 }
