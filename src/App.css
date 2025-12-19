@@ -1,3 +1,5 @@
 #hassan{
-    background-color: #0b1220;
+    /* background-color: #0b1220; */
+    backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
 }

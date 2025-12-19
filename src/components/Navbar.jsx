@@ -71,16 +71,16 @@ export default function Navbar() {
               </Link>
 
               {/* Desktop Nav */}
-              <div className="hidden md:flex items-center gap-1 rounded-2xl bg-white/5 p-1">
+              <div className="hidden md:flex items-center gap-1 rounded-2xl bg-white/5 p-1 ">
                 {navItems.map(item => (
                   <NavLink
                     key={item.path}
                     to={item.path}
                     className={({ isActive }) =>
-                      `rounded-xl px-4 py-2 text-sm font-medium transition ${
+                      `rounded-xl px-4 py-2 text-sm font-medium transition cursor-pointer ${
                         isActive
-                          ? 'bg-blue-600 text-white shadow'
-                          : 'text-slate-200 hover:bg-white/10 hover:text-white'
+                          ? 'bg-blue-600 text-white shadow '
+                          : 'text-slate-200 hover:bg-white/10 hover:text-white '
                       }`
                     }
                   >
@@ -95,9 +95,9 @@ export default function Navbar() {
                 <div className="relative hidden md:block">
                   <button
                     onClick={() => setLangOpen(v => !v)}
-                    className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-3 py-2 text-sm text-white shadow hover:bg-white/20"
+                    className="cursor-pointer inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/10 px-3 py-2 text-sm text-white shadow hover:bg-white/20 "
                   >
-                    <Globe className="h-4 w-4 text-blue-400" />
+                    <Globe className="h-4 w-4 text-blue-400 " />
                     {currentLang.flag}
                   </button>
 
@@ -107,17 +107,17 @@ export default function Navbar() {
                         initial={{ opacity: 0, y: -8, scale: 0.96 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: -8, scale: 0.96 }}
-                        className="absolute right-0 mt-2 w-44 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/95 backdrop-blur"
+                        className="absolute right-0 mt-2 w-44 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/95 backdrop-blur "
                       >
                         {languages.map(lng => (
                           <button
                             key={lng.code}
                             onClick={() => changeLanguage(lng.code)}
-                            className={`flex w-full items-center gap-3 px-4 py-2 text-sm transition hover:bg-blue-600/50 ${
+                            className={`flex w-full items-center gap-3 px-4 py-2 text-sm transition hover:bg-blue-600/50 cursor-pointer ${
                               i18n.language === lng.code ? 'bg-blue-700/60 text-white' : 'text-slate-200'
                             }`}
                           >
-                            <span className="text-base">{lng.flag}</span>
+                            <span className="text-base ">{lng.flag}</span>
                             <span>{lng.label}</span>
                           </button>
                         ))}
@@ -129,7 +129,7 @@ export default function Navbar() {
                 {/* Mobile */}
                 <button
                   onClick={() => setOpen(v => !v)}
-                  className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-white"
+                  className="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-white/15 bg-white/10 text-white cursor-pointer"
                 >
                   {open ? <X /> : <Menu />}
                 </button>
@@ -143,16 +143,16 @@ export default function Navbar() {
                   initial={{ height: 0, opacity: 0 }}
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
-                  className="md:hidden border-t border-white/10"
+                  className="md:hidden border-t border-white/10 "
                 >
-                  <div className="flex flex-col gap-1 p-3">
+                  <div className="flex flex-col gap-1 p-3 ">
                     {navItems.map(item => (
                       <NavLink
                         key={item.path}
                         to={item.path}
                         onClick={() => setOpen(false)}
                         className={({ isActive }) =>
-                          `rounded-xl px-4 py-3 text-sm transition ${
+                          `rounded-xl px-4 py-3 text-sm transition  ${
                             isActive ? 'bg-blue-600 text-white' : 'text-slate-200 hover:bg-white/10'
                           } ${isRTL ? 'text-right' : 'text-left'}`
                         }
@@ -161,12 +161,12 @@ export default function Navbar() {
                       </NavLink>
                     ))}
 
-                    <div className="mt-2 grid grid-cols-2 gap-2">
+                    <div className="mt-2 grid grid-cols-2 gap-2  ">
                       {languages.map(lng => (
                         <button
                           key={lng.code}
                           onClick={() => changeLanguage(lng.code)}
-                          className={`rounded-xl px-3 py-2 text-sm ${
+                          className={`rounded-xl px-3 py-2 text-sm cursor-pointer ${
                             i18n.language === lng.code
                               ? 'bg-blue-700/70 text-white'
                               : 'bg-white/5 text-slate-200'
