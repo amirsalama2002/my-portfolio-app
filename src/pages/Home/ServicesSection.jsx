@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import Slider from "react-slick"; // Carousel for Testimonials
-import "slick-carousel/slick/slick.css"; 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// ===== Services Section =====
 export function ServicesSection() {
   const { t } = useTranslation();
 
@@ -21,11 +22,11 @@ export function ServicesSection() {
     <section className="py-20 bg-gray-900 text-gray-100">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-16">{t("hero.cta2", "Our Services")}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-800 p-8 rounded-xl shadow-lg text-center hover:scale-105 transition-transform"
+              className="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg text-center hover:scale-105 transition-transform"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -33,7 +34,9 @@ export function ServicesSection() {
             >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="font-semibold text-xl mb-2">{service.title}</h3>
-              <p className="text-gray-300">{t("hero.desc", "High-quality professional cleaning for your home or office.")}</p>
+              <p className="text-gray-300 text-sm sm:text-base">
+                {t("hero.desc", "High-quality professional cleaning for your home or office.")}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -42,6 +45,7 @@ export function ServicesSection() {
   );
 }
 
+// ===== Why Choose Us Section =====
 export function WhyChooseUsSection() {
   const { t } = useTranslation();
 
@@ -54,7 +58,7 @@ export function WhyChooseUsSection() {
 
   return (
     <section className="py-20 bg-primary text-white">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
         {items.map((item, idx) => (
           <motion.div
             key={idx}
@@ -73,11 +77,12 @@ export function WhyChooseUsSection() {
   );
 }
 
+// ===== Testimonials Section =====
 export function TestimonialsSection() {
   const { t } = useTranslation();
 
   const testimonials = [
-    { name: "Ahmed, Dubai", text: t("hero.ahmed", "Top H Cleaning transformed my space! Highly recommend.") },
+    { name: "Amir, Dubai", text: t("hero.ahmed", "Top H Cleaning transformed my space! Highly recommend.") },
     { name: "Sara, Abu Dhabi", text: t("hero.sara", "Fast, reliable and professional service.") },
     { name: "Omar, Sharjah", text: t("hero.omar", "Exceptional cleaning team with great results.") },
   ];
@@ -90,9 +95,11 @@ export function TestimonialsSection() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
+    arrows: true,
     responsive: [
-      { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      { breakpoint: 768, settings: { slidesToShow: 1 } },
+      { breakpoint: 1024, settings: { slidesToShow: 2, arrows: true } },
+      { breakpoint: 768, settings: { slidesToShow: 1, arrows: false } },
+      { breakpoint: 480, settings: { slidesToShow: 1, arrows: false } },
     ],
   };
 
@@ -102,9 +109,9 @@ export function TestimonialsSection() {
         <h2 className="text-4xl font-bold text-center mb-16">{t("hero.testimonials", "Testimonials")}</h2>
         <Slider {...settings}>
           {testimonials.map((tst, idx) => (
-            <div key={idx} className="p-6">
+            <div key={idx} className="p-4 sm:p-6">
               <motion.div
-                className="bg-gray-800 p-8 rounded-xl shadow-lg"
+                className="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

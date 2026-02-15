@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
   const { t } = useTranslation();
 
   const testimonials = [
-    { name: "Amir, Dubai", text: t("testimonials.desc1", "Top H Cleaning transformed my space! Highly recommend.") },
+    { name: "Hassan, Dubai", text: t("testimonials.desc1", "Top H Cleaning transformed my space! Highly recommend.") },
     { name: "Sara, Abu Dhabi", text: t("testimonials.desc2", "Fast, reliable and professional service.") },
     { name: "Omar, Sharjah", text: t("testimonials.desc3", "Exceptional cleaning team with great results.") },
   ];
