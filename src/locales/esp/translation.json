@@ -1,31 +1,66 @@
 {
+  "hero": {
+    "title": "Servicios Profesionales de Limpieza",
+    "subtitle": "Para Hogares, Oficinas y Negocios",
+    "cta2": "Nuestros Servicios",
+    "cta1": "Obtener Cotización Gratis",
+    "residential": "Limpieza Residencial",
+    "commercial": "Limpieza Comercial",
+    "deep": "Limpieza Profunda",
+    "move": "Mudanza / Entrada-Salida",
+    "carpet": "Limpieza de Alfombras",
+    "window": "Limpieza de Ventanas",
+    "experience": "Más de 10 años de experiencia",
+    "projects": "Más de 1200 proyectos",
+    "support": "Soporte 24/7",
+    "eco": "Ecológico",
+    "desc": "Limpieza profesional de alta calidad para su hogar u oficina.",
+    "ahmed": "¡Top H Cleaning transformó mi espacio! Muy recomendable.",
+    "sara": "Servicio rápido, confiable y profesional.",
+    "omar": "Equipo de limpieza excepcional con excelentes resultados.",
+    "testimonials": "Testimonios"
+  },
+  "meroabout": {
+    "title": "Sobre Top H Cleaning",
+    "description": "Top H Cleaning es un proveedor de servicios de limpieza profesional, especializado en limpieza residencial y comercial.",
+    "more": "Combinamos años de experiencia con técnicas modernas de limpieza para garantizar satisfacción y un ambiente más saludable para nuestros clientes.",
+    "professional": "Equipo Profesional",
+    "professional_desc": "Nuestros especialistas en limpieza capacitados aseguran que cada rincón esté impecable.",
+    "safe": "Seguro y Confiable",
+    "safe_desc": "Usamos productos ecológicos seguros para familias y mascotas.",
+    "fast": "Eficiente y Puntual",
+    "fast_desc": "Nuestro equipo completa las tareas a tiempo sin comprometer la calidad.",
+    "eco": "Ecológico",
+    "eco_desc": "Cuidamos el medio ambiente con soluciones de limpieza sostenibles.",
+    "we": "Por qué elegir Top H Cleaning"
+  },
   "nav": {
     "home": "Inicio",
     "about": "Acerca de",
-    "services": "Experiencia",
+    "services": "Servicios",
     "contact": "Contacto",
-    "prodect" : "Producto"
+    "prodect": "Proyectos"
   },
   "home": {
     "greeting": "Hola, soy",
-    "name": "Amir Salama",  
-    "title": "Desarrollador Full Stack (Laravel | React.js)",
+    "name": "Amir Salama",
+    "title": "Top H Cleaning — Compañía Profesional de Limpieza",
     "hire_me": "Contrátame",
-    "view_work": "Ver Trabajos",
-    "my_name": "Amir Salama"
+    "view_work": "Ver Trabajo",
+    "my_name": "Top H Cleaning"
   },
   "lango": {
-  "en": "Inglés",
-  "ar": "Árabe",
-  "fr": "Francés",
-  "de": "Alemán",
-  "ru": "Ruso",
-  "pt": "Portugués",
-  "hi": "Hindi",
-  "cn": "Chino",
-  "es": "Español",
-  "it": "Italiano"
-},
+    "en": "Inglés",
+    "ar": "Árabe",
+    "fr": "Francés",
+    "de": "Alemán",
+    "ru": "Ruso",
+    "pt": "Portugués",
+    "hi": "Hindi",
+    "cn": "Chino",
+    "es": "Español",
+    "it": "Italiano"
+  },
   "home_sections": {
     "stats": {
       "title": "Mis Logros e Impacto",
@@ -37,9 +72,9 @@
     "skills": {
       "title": "Habilidades Clave",
       "p1": "Dominio sólido de PHP y el framework Laravel para desarrollo backend robusto y escalable.",
-      "p2": "Creación de interfaces dinámicas y amigables con React.js y JavaScript moderno (ES6+).",
-      "p3": "Experto en diseños pixel-perfect y responsivos utilizando Tailwind CSS.",
-      "p4": "Habilidad en desarrollo de APIs, optimización de bases de datos (MySQL) e integración de servicios de terceros."
+      "p2": "Creación de interfaces dinámicas y fáciles de usar con React.js y JavaScript moderno (ES6+).",
+      "p3": "Experto en crear diseños pixel-perfect y responsivos utilizando Tailwind CSS.",
+      "p4": "Habilidad en desarrollo de API, optimización de bases de datos (MySQL) e integración de servicios de terceros."
     },
     "objective": {
       "title": "¿Por qué contratarme? El valor que aporto.",
@@ -62,9 +97,9 @@
   "about": {
     "objective_title": "Introducción",
     "no": "Habilidades",
-    "objective_p1": "Desarrollador Full Stack con más de 2 años de experiencia creando 10+ aplicaciones web modernas usando Laravel y React.js.",
-    "objective_p2": "Hábil en desarrollo de APIs, optimización de bases de datos y mejoras de rendimiento frontend. Apasionado por escribir código limpio y escalable y entregar soluciones centradas en el usuario.",
-    "download_cv": "Descargar mi CV",
+    "objective_p1": "Desarrollador Full Stack con más de 2 años de experiencia práctica construyendo 10+ aplicaciones web modernas con Laravel y React.js.",
+    "objective_p2": "Habilidad en desarrollo de API, optimización de bases de datos y mejoras de rendimiento front-end. Apasionado por escribir código limpio y escalable y entregar soluciones centradas en el usuario.",
+    "download_cv": "Descargar Mi CV",
     "skills": {
       "languages": "Idiomas",
       "frameworks": "Frameworks",
@@ -73,50 +108,52 @@
     }
   },
   "exp": {
-    "subtitle": "Mis Logros y Impacto Clave: Una muestra de mis proyectos de desarrollo más significativos, destacando mi rol y las tecnologías utilizadas.",
+    "subtitle": "Mis logros e impacto clave: una muestra de mis proyectos de desarrollo más significativos, destacando mi rol y las tecnologías utilizadas.",
     "title": "Experiencia Profesional",
     "hash_title": "Desarrollador Full Stack",
     "hash_duration": "Mar 2025 - Oct 2025",
     "hash_p1": "Desarrollé y desplegué 3+ aplicaciones full-stack usando Laravel, React.js y Tailwind CSS.",
     "hash_p2": "Implementé autenticación segura JWT e integré APIs de terceros.",
-    "hash_p3": "Trabajé estrechamente con diseñadores UI/UX para entregar experiencias web responsivas y de alta calidad.",
-    "aqar_title": "Desarrollador Backend (PHP / Laravel)",
+    "hash_p3": "Colaboré estrechamente con diseñadores UI/UX para entregar experiencias web responsivas y de alta calidad.",
+    "aqar_title": "Desarrollador Back-End (PHP / Laravel)",
     "aqar_duration": "Ene 2024 - Feb 2025",
-    "aqar_p1": "Mejoré el rendimiento del backend en un 30% mediante optimización de consultas y caching.",
-    "aqar_p2": "Construí y mantuve APIs RESTful usadas por múltiples módulos frontend.",
-    "aqar_p3": "Colaboré con el equipo frontend para ofrecer una experiencia de usuario un 20% más rápida."
+    "aqar_p1": "Mejoré el rendimiento del backend en un 30% mediante optimización de consultas y caché.",
+    "aqar_p2": "Construí y mantuve APIs RESTful utilizadas por múltiples módulos frontend.",
+    "aqar_p3": "Colaboré con el equipo frontend para ofrecer una experiencia de usuario 20% más rápida."
   },
   "projects": {
     "title": "Proyectos Clave",
     "live_demo": "Demo en Vivo",
     "github_code": "Código en GitHub",
     "devdocs": {
-      "title": "DevDocs Language",
-      "desc": "Un hub de documentación para desarrolladores que agrega múltiples idiomas y frameworks en una interfaz rápida y buscable (React.js, Tailwind CSS)."
+      "title": "Lenguaje DevDocs",
+      "desc": "Un hub de documentación para desarrolladores que agrega múltiples lenguajes y frameworks en una interfaz rápida y buscable (React.js, Tailwind CSS)."
     },
     "ecommerce": {
-      "title": "App E-commerce (Laravel + React)",
-      "desc": "Plataforma e-commerce full-stack con pago seguro, gestión de productos y seguimiento de pedidos en tiempo real usando Laravel, React.js y MySQL."
+      "title": "Aplicación E-commerce (Laravel + React)",
+      "desc": "Plataforma e-commerce full-stack con checkout seguro, gestión de productos y seguimiento de pedidos en tiempo real usando Laravel, React.js y MySQL."
     },
     "nidaa": {
       "title": "Nidaa El-Samma",
-      "desc": "Aplicación web islámica con oraciones diarias, escucha del Corán, Tasbeeh y horarios de oración con sonido de Adhan y fecha Hijri."
+      "desc": "Aplicación web islámica con oraciones diarias, escucha del Corán, Tasbeeh, horarios de oración con sonido de Adhan y fecha Hijri."
     }
   },
   "contact": {
     "submitting": "Enviando mensaje...",
     "sending": "Enviando...",
-    "success_message": "¡Gracias! Tu mensaje ha sido enviado exitosamente.",
+    "success_message": "¡Gracias! Su mensaje ha sido enviado exitosamente.",
     "info": {
       "email": "Correo Electrónico",
       "phone": "Número de Teléfono",
-      "location": "Ubicación"
+      "location": "Ubicación",
+      "mopile": "+971 50 321 4077",
+      "city": "EAU, Dubái"
     },
     "form": {
-      "name": "Tu Nombre",
-      "email": "Tu Correo",
+      "name": "Su Nombre",
+      "email": "Su Email",
       "subject": "Asunto",
-      "message": "Tu Mensaje/Consulta",
+      "message": "Su Mensaje / Consulta",
       "button": "Enviar Mensaje"
     }
   }

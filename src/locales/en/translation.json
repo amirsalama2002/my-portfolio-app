@@ -1,4 +1,43 @@
 {
+
+"hero":{
+   "title" : "Professional Cleaning Services",
+   "subtitle" : "For Homes, Offices & Businesses",
+   "cta2" : "Our Services",
+   "cta1" : "Get a Free Quote",
+   "residential" : "Residential Cleaning",
+   "commercial" : "Commercial Cleaning",
+   "deep" : "Deep Cleaning",
+   "move" : "Move In / Move Out",
+   "carpet" : "Carpet Cleaning",
+   "window" : "Window Cleaning",
+   "experience" : "10+ Years Experience",
+    "projects" : "1200+ Projects",
+    "support" : "24/7 Support",
+    "eco" : "Eco-Friendly",
+    "desc" : "High-quality professional cleaning for your home or office.",
+    "ahmed" : "Top H Cleaning transformed my space! Highly recommend.",
+    "sara" : "Fast, reliable and professional service.",
+    "omar" : "Exceptional cleaning team with great results.",
+    "testimonials":"Testimonials"
+},
+
+"meroabout":{
+   "title" : "About Top H Cleaning",
+   "description": "Top H Cleaning is a professional cleaning service provider specializing in residential and commercial cleaning.",
+    "more" : "We combine years of experience with modern cleaning techniques to guarantee satisfaction and a healthier environment for our clients.",
+    "professional" : "Professional Team",
+    "professional_desc" : "Our trained cleaning specialists ensure every corner is spotless.",
+    "safe" : "Safe & Reliable",
+    "safe_desc":" We use eco-friendly products that are safe for families and pets.",
+    "fast" : "Efficient & Timely",
+    "fast_desc" :"Our team completes tasks on time without compromising quality.",
+    "eco" :"Eco-Friendly",
+    "eco_desc" : "We care for the environment with sustainable cleaning solutions.",
+    "we" : "Why Choose Top H Cleaning"
+},
+
+
   "nav": {
     "home": "Home",
     "about": "About",
@@ -9,10 +48,10 @@
   "home": {
     "greeting": "Hello, I am",
     "name": "Amir Salama",  
-    "title": "Full Stack Developer (Laravel | React.js)",
+    "title": "Top H Cleaning — Professional Cleaning Company",
     "hire_me": "Hire Me",
     "view_work": "View Work",
-    "my_name": "Amir Salama"
+    "my_name": "Top H Cleaning"
   },
   "lango":{
     "en":"English",

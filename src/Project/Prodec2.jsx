@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "https://cdn.dribbble.com/userupload/32875394/file/original-d33f51858dc31debef5cb6bca897daa0.png?format=webp&resize=400x300&vertical=center",
-  "https://mir-s3-cdn-cf.behance.net/projects/404/8d36c5225690371.Y3JvcCwyMzk4LDE4NzYsMCww.png",
-  "https://uicreative.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2021/06/22135056/20-landing-page-design-tips-and-ideas.jpg",
-  "https://cdn.dribbble.com/userupload/4257771/file/original-81f0df497e52e90f76cd05099c0f25b2.png?format=webp&resize=400x300&vertical=center",
-  "https://thewebsitearchitect.com/wp-content/uploads/2021/02/school-website-project.jpg",
+  "https://odoocdn.com/openerp_website/static/src/img/industries/cleaning-services/hero-text-image.webp",
+  "https://www.bobvila.com/wp-content/uploads/2022/03/The-Best-Cleaning-Services-Options.jpg?quality=85",
+  "https://alshaarq.com/wp-content/uploads/2024/02/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D8%A8%D8%AD%D8%A7%D8%A6%D9%84.webp",
+  "https://supercleaning-eg.com/wp-content/uploads/2024/08/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%81%D9%8A-%D9%85%D9%86%D9%88%D9%81.jpg",
+  "https://uctc-eg.com/wp-content/uploads/2024/11/%D8%A7%D9%81%D8%B6%D9%84-%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D9%88%D9%81%D9%8A%D8%A9.jpg"
 ];
 
 export default function Product2() {
@@ -111,7 +111,7 @@ export default function Product2() {
               Project {active + 1}
             </p>
             <p className="text-sm text-slate-300">
-              UI / UX • Frontend Development
+              Top / H • Cleaning
             </p>
           </motion.div>
         </div>

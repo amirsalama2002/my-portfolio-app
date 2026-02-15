@@ -1,70 +1,105 @@
 {
+  "hero": {
+    "title": "Servizi di Pulizia Professionale",
+    "subtitle": "Per Case, Uffici e Aziende",
+    "cta2": "I Nostri Servizi",
+    "cta1": "Richiedi un Preventivo Gratuito",
+    "residential": "Pulizia Residenziale",
+    "commercial": "Pulizia Commerciale",
+    "deep": "Pulizia Profonda",
+    "move": "Trasloco / Entrata-Uscita",
+    "carpet": "Pulizia Tappeti",
+    "window": "Pulizia Finestre",
+    "experience": "Oltre 10 anni di esperienza",
+    "projects": "Oltre 1200 progetti",
+    "support": "Supporto 24/7",
+    "eco": "Ecologico",
+    "desc": "Pulizia professionale di alta qualità per la tua casa o ufficio.",
+    "ahmed": "Top H Cleaning ha trasformato il mio spazio! Altamente consigliato.",
+    "sara": "Servizio rapido, affidabile e professionale.",
+    "omar": "Team di pulizia eccezionale con ottimi risultati.",
+    "testimonials": "Testimonianze"
+  },
+  "meroabout": {
+    "title": "Informazioni su Top H Cleaning",
+    "description": "Top H Cleaning è un fornitore di servizi di pulizia professionale specializzato in pulizie residenziali e commerciali.",
+    "more": "Combiniamo anni di esperienza con tecniche moderne di pulizia per garantire soddisfazione e un ambiente più sano per i nostri clienti.",
+    "professional": "Team Professionale",
+    "professional_desc": "I nostri specialisti della pulizia addestrati garantiscono che ogni angolo sia impeccabile.",
+    "safe": "Sicuro e Affidabile",
+    "safe_desc": "Utilizziamo prodotti ecologici sicuri per famiglie e animali domestici.",
+    "fast": "Efficiente e Puntuale",
+    "fast_desc": "Il nostro team completa le attività in tempo senza compromettere la qualità.",
+    "eco": "Ecologico",
+    "eco_desc": "Ci prendiamo cura dell'ambiente con soluzioni di pulizia sostenibili.",
+    "we": "Perché scegliere Top H Cleaning"
+  },
   "nav": {
     "home": "Home",
-    "about": "Chi sono",
-    "services": "Esperienza",
+    "about": "Chi Siamo",
+    "services": "Servizi",
     "contact": "Contatti",
-    "prodect" : "Prodotto"
+    "prodect": "Progetti"
   },
   "home": {
     "greeting": "Ciao, sono",
-    "name": "Amir Salama",  
-    "title": "Sviluppatore Full Stack (Laravel | React.js)",
+    "name": "Amir Salama",
+    "title": "Top H Cleaning — Azienda di Pulizia Professionale",
     "hire_me": "Assumimi",
     "view_work": "Vedi Lavori",
-    "my_name": "Amir Salama"
+    "my_name": "Top H Cleaning"
   },
   "lango": {
-  "en": "Inglese",
-  "ar": "Arabo",
-  "fr": "Francese",
-  "de": "Tedesco",
-  "ru": "Russo",
-  "pt": "Portoghese",
-  "hi": "Hindi",
-  "cn": "Cinese",
-  "es": "Spagnolo",
-  "it": "Italiano"
-},
+    "en": "Inglese",
+    "ar": "Arabo",
+    "fr": "Francese",
+    "de": "Tedesco",
+    "ru": "Russo",
+    "pt": "Portoghese",
+    "hi": "Hindi",
+    "cn": "Cinese",
+    "es": "Spagnolo",
+    "it": "Italiano"
+  },
   "home_sections": {
     "stats": {
-      "title": "I miei risultati e impatto",
-      "l1": "Anni di esperienza",
-      "l2": "Miglioramento delle prestazioni backend",
-      "l3": "Applicazioni web moderne sviluppate",
-      "l4": "Miglioramento della velocità frontend"
+      "title": "I Miei Risultati e Impatto",
+      "l1": "Anni di Esperienza",
+      "l2": "Miglioramento delle Prestazioni Backend",
+      "l3": "Applicazioni Web Moderne Realizzate",
+      "l4": "Miglioramento Velocità Frontend"
     },
     "skills": {
-      "title": "Competenze principali",
-      "p1": "Padronanza solida di PHP e del framework Laravel per uno sviluppo backend robusto e scalabile.",
-      "p2": "Creazione di interfacce dinamiche e intuitive con React.js e JavaScript moderno (ES6+).",
-      "p3": "Esperto nella creazione di design responsivi e pixel-perfect usando il framework Tailwind CSS.",
-      "p4": "Competenze nello sviluppo API, ottimizzazione database (MySQL) e integrazione di servizi di terze parti."
+      "title": "Competenze Chiave",
+      "p1": "Solida padronanza di PHP e del framework Laravel per uno sviluppo backend robusto e scalabile.",
+      "p2": "Creazione di interfacce dinamiche e user-friendly con React.js e JavaScript moderno (ES6+).",
+      "p3": "Esperto nella creazione di design pixel-perfect e responsivi utilizzando Tailwind CSS.",
+      "p4": "Competente nello sviluppo di API, ottimizzazione database (MySQL) e integrazione di servizi di terze parti."
     },
     "objective": {
       "title": "Perché assumermi? Il valore che porto.",
-      "read_more": "Leggi la storia completa"
+      "read_more": "Leggi la Storia Completa"
     },
     "featured": {
-      "title": "Progetto in evidenza",
-      "view_all": "Vedi tutti i progetti"
+      "title": "Progetto in Evidenza",
+      "view_all": "Vedi Tutti i Progetti"
     },
     "edu": {
-      "title": "Formazione e comunicazione",
+      "title": "Formazione & Comunicazione",
       "degree": "Laurea in Sistemi Informativi",
-      "major": "Tecnologia dell'informazione",
+      "major": "Tecnologia dell'Informazione",
       "academy": "Al Shorouk Academy, Egitto (2020-2024)",
-      "languages": "Lingue e comunicazione",
+      "languages": "Lingue & Comunicazione",
       "ar": "Arabo: Madrelingua",
-      "en": "Inglese: Intermedio (in miglioramento per comunicazione professionale)"
+      "en": "Inglese: Intermedio (Migliorando per comunicazione professionale)"
     }
   },
   "about": {
-    "objective_title":"Introduzione",
-    "no":"Competenze",
-    "objective_p1": "Sviluppatore Full Stack con oltre 2 anni di esperienza pratica nello sviluppo di più di 10 applicazioni web moderne utilizzando Laravel e React.js.",
-    "objective_p2": "Competenze nello sviluppo API, ottimizzazione database e miglioramento delle prestazioni front-end. Appassionato nello scrivere codice pulito e scalabile e nel fornire soluzioni centrate sull'utente.",
-    "download_cv": "Scarica il mio CV",
+    "objective_title": "Introduzione",
+    "no": "Competenze",
+    "objective_p1": "Sviluppatore Full Stack con oltre 2 anni di esperienza pratica, costruendo più di 10 applicazioni web moderne utilizzando Laravel e React.js.",
+    "objective_p2": "Competente nello sviluppo API, ottimizzazione database e miglioramenti delle prestazioni front-end. Appassionato di scrivere codice pulito e scalabile e fornire soluzioni user-centered.",
+    "download_cv": "Scarica il Mio CV",
     "skills": {
       "languages": "Lingue",
       "frameworks": "Framework",
@@ -73,26 +108,26 @@
     }
   },
   "exp": {
-    "subtitle":"I miei risultati e impatto chiave: una panoramica dei miei progetti più significativi, evidenziando il mio ruolo e le tecnologie utilizzate per raggiungere gli obiettivi.",
+    "subtitle": "I miei risultati e impatto chiave: una vetrina dei miei progetti di sviluppo più significativi, evidenziando il mio ruolo e le tecnologie utilizzate.",
     "title": "Esperienza Professionale",
     "hash_title": "Sviluppatore Full Stack",
     "hash_duration": "Mar 2025 - Ott 2025",
-    "hash_p1": "Sviluppato e distribuito 3+ applicazioni full-stack utilizzando Laravel, React.js e Tailwind CSS.",
-    "hash_p2": "Implementata autenticazione sicura JWT e integrazione API di terze parti.",
-    "hash_p3": "Collaborato con designer UI/UX per fornire esperienze web responsive e di alta qualità.",
-    "aqar_title": "Sviluppatore Backend (PHP / Laravel)",
+    "hash_p1": "Sviluppato e distribuito 3+ applicazioni full-stack usando Laravel, React.js e Tailwind CSS.",
+    "hash_p2": "Implementata autenticazione JWT sicura e integrate API di terze parti.",
+    "hash_p3": "Collaborato strettamente con designer UI/UX per fornire esperienze web responsive e di alta qualità.",
+    "aqar_title": "Sviluppatore Back-End (PHP / Laravel)",
     "aqar_duration": "Gen 2024 - Feb 2025",
-    "aqar_p1": "Migliorate le prestazioni backend del 30% tramite ottimizzazione delle query e caching.",
-    "aqar_p2": "Sviluppate e mantenute API RESTful utilizzate da diversi moduli frontend.",
-    "aqar_p3": "Collaborato con il team frontend per offrire un'esperienza utente più veloce del 20%."
+    "aqar_p1": "Migliorato le prestazioni del backend del 30% tramite ottimizzazione query e caching.",
+    "aqar_p2": "Costruito e mantenuto API RESTful utilizzate da diversi moduli frontend.",
+    "aqar_p3": "Collaborato con il team frontend per fornire un'esperienza utente 20% più veloce."
   },
   "projects": {
-    "title": "Progetti principali",
-    "live_demo": "Demo Online",
-    "github_code": "Codice su GitHub",
+    "title": "Progetti Chiave",
+    "live_demo": "Demo Live",
+    "github_code": "Codice GitHub",
     "devdocs": {
-      "title": "DevDocs Lingua",
-      "desc": "Un hub di documentazione per sviluppatori che aggrega più lingue e framework in un'interfaccia veloce e ricercabile (React.js, Tailwind CSS)."
+      "title": "Linguaggio DevDocs",
+      "desc": "Un hub di documentazione per sviluppatori che aggrega più linguaggi e framework in un'interfaccia veloce e ricercabile (React.js, Tailwind CSS)."
     },
     "ecommerce": {
       "title": "App E-commerce (Laravel + React)",
@@ -100,24 +135,26 @@
     },
     "nidaa": {
       "title": "Nidaa El-Samma",
-      "desc": "Applicazione web islamica con preghiere giornaliere, ascolto del Corano, Tasbeeh e orari delle preghiere con suono Adhan e visualizzazione della data Hijri."
+      "desc": "Applicazione web islamica con preghiere giornaliere, ascolto del Corano, Tasbeeh, orari di preghiera con suono Adhan e visualizzazione della data Hijri."
     }
   },
   "contact": {
-    "submitting": "Invio messaggio...",
-    "sending": "Invio...",
+    "submitting": "Invio del messaggio...",
+    "sending": "Invio in corso...",
     "success_message": "Grazie! Il tuo messaggio è stato inviato con successo.",
     "info": {
       "email": "Indirizzo Email",
-      "phone": "Numero di telefono",
-      "location": "Posizione"
+      "phone": "Numero di Telefono",
+      "location": "Posizione",
+      "mopile": "+971 50 321 4077",
+      "city": "EAU, Dubai"
     },
     "form": {
-      "name": "Il tuo nome",
-      "email": "La tua email",
+      "name": "Il Tuo Nome",
+      "email": "La Tua Email",
       "subject": "Oggetto",
-      "message": "Il tuo messaggio/domanda",
-      "button": "Invia messaggio"
+      "message": "Il Tuo Messaggio / Richiesta",
+      "button": "Invia Messaggio"
     }
   }
 }

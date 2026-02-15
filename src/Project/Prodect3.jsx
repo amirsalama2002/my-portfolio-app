@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "https://cdn.dribbble.com/userupload/12590806/file/original-c3c014ab30a422c3f95ac2e33bad7819.jpg?resize=400x0",
-  "https://catchthemes.com/wp-content/uploads/2022/06/Costello-Dark-Dark-Demo.jpg",
-  "https://img.freepik.com/premium-psd/3d-web-interface-mockup-with-glass-morphism-effect_103373-2876.jpg",
-  "https://framerusercontent.com/images/ZVF7fMWHhogqf1U4Up595M8Yp4.jpg",
-  "https://inkbotdesign.com/wp-content/uploads/2021/02/dark-mode-web-design-trend.webp",
+  "https://quickcleansa.com/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-10-at-8.30.45-PM-e1715372483129-539x500.jpeg",
+  "https://quickcleansa.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-27-at-9.56.36-PM-750x420.jpeg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7fpsjw614PC8vTF7KGh61Y2p7Ax2LhBVCw&s",
+  "https://www.afdal10.com/wp-content/uploads/2022/07/%D9%85%D8%B9%D8%AF%D8%A7%D8%AA-1-1024x576.jpg",
+  "https://supercleaning-eg.com/wp-content/uploads/2023/04/%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%88%D8%A7%D8%AC%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D9%86%D9%8A3.jpg",
 ];
 
 export default function Product3() {
@@ -117,7 +117,7 @@ export default function Product3() {
               Project {active + 1}
             </p>
             <p className="text-sm text-slate-300">
-              Dark UI • Glassmorphism • Frontend
+              Top / H • Cleaning
             </p>
           </motion.div>
         </div>

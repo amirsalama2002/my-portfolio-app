@@ -1,49 +1,84 @@
 {
+  "hero": {
+    "title": "Serviços Profissionais de Limpeza",
+    "subtitle": "Para Casas, Escritórios e Empresas",
+    "cta2": "Nossos Serviços",
+    "cta1": "Obter um Orçamento Gratuito",
+    "residential": "Limpeza Residencial",
+    "commercial": "Limpeza Comercial",
+    "deep": "Limpeza Profunda",
+    "move": "Mudança / Entrada-Saída",
+    "carpet": "Limpeza de Tapetes",
+    "window": "Limpeza de Janelas",
+    "experience": "Mais de 10 anos de experiência",
+    "projects": "Mais de 1200 projetos",
+    "support": "Suporte 24/7",
+    "eco": "Ecológico",
+    "desc": "Limpeza profissional de alta qualidade para sua casa ou escritório.",
+    "ahmed": "A Top H Cleaning transformou meu espaço! Altamente recomendada.",
+    "sara": "Serviço rápido, confiável e profissional.",
+    "omar": "Equipe de limpeza excepcional com ótimos resultados.",
+    "testimonials": "Depoimentos"
+  },
+  "meroabout": {
+    "title": "Sobre a Top H Cleaning",
+    "description": "A Top H Cleaning é uma prestadora de serviços profissionais de limpeza, especializada em limpeza residencial e comercial.",
+    "more": "Combinamos anos de experiência com técnicas modernas de limpeza para garantir satisfação e um ambiente mais saudável para nossos clientes.",
+    "professional": "Equipe Profissional",
+    "professional_desc": "Nossos especialistas em limpeza treinados garantem que cada canto esteja impecável.",
+    "safe": "Seguro & Confiável",
+    "safe_desc": "Usamos produtos ecológicos que são seguros para famílias e animais de estimação.",
+    "fast": "Eficiente & Pontual",
+    "fast_desc": "Nossa equipe realiza tarefas no prazo sem comprometer a qualidade.",
+    "eco": "Ecológico",
+    "eco_desc": "Cuidamos do meio ambiente com soluções de limpeza sustentáveis.",
+    "we": "Por que escolher a Top H Cleaning"
+  },
   "nav": {
     "home": "Início",
     "about": "Sobre",
-    "services": "Experiência",
+    "services": "Serviços",
     "contact": "Contato",
-    "prodect" : "Produto"
+    "prodect": "Projetos"
   },
   "home": {
     "greeting": "Olá, eu sou",
     "name": "Amir Salama",
-    "title": "Desenvolvedor Full Stack (Laravel | React.js)",
+    "title": "Top H Cleaning — Empresa Profissional de Limpeza",
     "hire_me": "Contrate-me",
     "view_work": "Ver Trabalhos",
-    "my_name": "Amir Salama"
+    "my_name": "Top H Cleaning"
   },
   "lango": {
-  "en": "Inglês",
-  "ar": "Árabe",
-  "fr": "Francês",
-  "de": "Alemão",
-  "ru": "Russo",
-  "pt": "Português",
-  "hi": "Hindi",
-  "cn": "Chinês",
-  "es": "Espanhol",
-  "it": "Italiano"
-},
+    "en": "Inglês",
+    "ar": "Árabe",
+    "fr": "Francês",
+    "de": "Alemão",
+    "ru": "Russo",
+    "pt": "Português",
+    "hi": "Hindi",
+    "cn": "Chinês",
+    "es": "Espanhol",
+    "it": "Italiano"
+  },
   "home_sections": {
     "stats": {
-      "title": "Minhas Conquistas & Impacto",
+      "title": "Minhas Conquistas e Impacto",
       "l1": "Anos de Experiência",
-      "l2": "Aumento de Desempenho Backend",
-      "l3": "Aplicativos Web Modernos Criados",
+      "l2": "Melhoria de Performance Backend",
+      "l3": "Aplicações Web Modernas Criadas",
       "l4": "Melhoria de Velocidade Frontend"
     },
     "skills": {
-      "title": "Expertise Principal",
+      "title": "Competências Principais",
       "p1": "Domínio sólido de PHP e do framework Laravel para desenvolvimento backend robusto e escalável.",
       "p2": "Construção de interfaces dinâmicas e amigáveis com React.js e JavaScript moderno (ES6+).",
-      "p3": "Especialista em criar designs responsivos e precisos usando Tailwind CSS.",
+      "p3": "Especialista em criar designs pixel-perfect e responsivos usando o framework Tailwind CSS.",
       "p4": "Habilidade em desenvolvimento de APIs, otimização de banco de dados (MySQL) e integração de serviços de terceiros."
     },
     "objective": {
-      "title": "Por que me contratar? O valor que trago.",
-      "read_more": "Leia a História Completa"
+      "title": "Por que me contratar? O valor que ofereço.",
+      "read_more": "Ler História Completa"
     },
     "featured": {
       "title": "Projeto em Destaque",
@@ -53,7 +88,7 @@
       "title": "Formação & Comunicação",
       "degree": "Bacharel em Sistemas de Informação",
       "major": "Tecnologia da Informação",
-      "academy": "Academia Al Shorouk, Egito (2020–2024)",
+      "academy": "Al Shorouk Academy, Egito (2020-2024)",
       "languages": "Idiomas & Comunicação",
       "ar": "Árabe: Nativo",
       "en": "Inglês: Intermediário (Melhorando para comunicação profissional)"
@@ -62,8 +97,8 @@
   "about": {
     "objective_title": "Introdução",
     "no": "Habilidades",
-    "objective_p1": "Desenvolvedor Full Stack com mais de 2 anos de experiência prática e 10+ aplicativos web modernos construídos com Laravel e React.js.",
-    "objective_p2": "Habilidade em desenvolvimento de APIs, otimização de bancos de dados e melhorias de desempenho frontend. Apaixonado por escrever código limpo, escalável e entregar soluções centradas no usuário.",
+    "objective_p1": "Desenvolvedor Full Stack com mais de 2 anos de experiência prática construindo mais de 10 aplicações web modernas usando Laravel e React.js.",
+    "objective_p2": "Habilidade em desenvolvimento de APIs, otimização de bancos de dados e melhorias de performance front-end. Apaixonado por escrever código limpo, escalável e entregar soluções centradas no usuário.",
     "download_cv": "Baixar Meu CV",
     "skills": {
       "languages": "Idiomas",
@@ -73,34 +108,34 @@
     }
   },
   "exp": {
-    "subtitle": "Minhas Conquistas e Impacto Principal: uma mostra dos projetos de desenvolvimento mais significativos, destacando meu papel e as tecnologias utilizadas para atingir os objetivos.",
+    "subtitle": "Minhas conquistas e impacto principal: uma vitrine dos meus projetos de desenvolvimento mais significativos, destacando meu papel e as tecnologias utilizadas.",
     "title": "Experiência Profissional",
     "hash_title": "Desenvolvedor Full Stack",
     "hash_duration": "Mar 2025 - Out 2025",
-    "hash_p1": "Desenvolveu e implantou 3+ aplicações full-stack usando Laravel, React.js e Tailwind CSS.",
-    "hash_p2": "Implementou autenticação JWT segura e integrou APIs de terceiros.",
-    "hash_p3": "Trabalhou em estreita colaboração com designers UI/UX para entregar experiências web responsivas e de alta qualidade.",
+    "hash_p1": "Desenvolvimento e implantação de mais de 3 aplicações full-stack usando Laravel, React.js e Tailwind CSS.",
+    "hash_p2": "Implementação de autenticação JWT segura e integração de APIs de terceiros.",
+    "hash_p3": "Trabalho próximo com designers UI/UX para entregar experiências web responsivas e de alta qualidade.",
     "aqar_title": "Desenvolvedor Back-End (PHP / Laravel)",
     "aqar_duration": "Jan 2024 - Fev 2025",
-    "aqar_p1": "Melhorou o desempenho do backend em 30% por meio de otimização de consultas e cache.",
-    "aqar_p2": "Construiu e manteve APIs RESTful usadas por múltiplos módulos frontend.",
-    "aqar_p3": "Colaborou com a equipe frontend para entregar uma experiência de usuário 20% mais rápida."
+    "aqar_p1": "Melhoria do desempenho do backend em 30% através de otimização de consultas e caching.",
+    "aqar_p2": "Criação e manutenção de APIs RESTful usadas por vários módulos frontend.",
+    "aqar_p3": "Colaboração com a equipe frontend para entregar uma experiência do usuário 20% mais rápida."
   },
   "projects": {
     "title": "Projetos Principais",
-    "live_demo": "Demo ao Vivo",
+    "live_demo": "Demo Ao Vivo",
     "github_code": "Código no GitHub",
     "devdocs": {
-      "title": "DevDocs Language",
-      "desc": "Um hub de documentação para desenvolvedores que agrega múltiplas linguagens e frameworks em uma interface rápida e pesquisável (React.js, Tailwind CSS)."
+      "title": "Linguagem DevDocs",
+      "desc": "Hub de documentação para desenvolvedores que agrega várias linguagens e frameworks em uma interface rápida e pesquisável (React.js, Tailwind CSS)."
     },
     "ecommerce": {
-      "title": "Aplicativo E-commerce (Laravel + React)",
-      "desc": "Plataforma e-commerce full-stack com checkout seguro, gerenciamento de produtos e rastreamento de pedidos em tempo real usando Laravel, React.js e MySQL."
+      "title": "Aplicação E-commerce (Laravel + React)",
+      "desc": "Plataforma e-commerce full-stack com checkout seguro, gestão de produtos e rastreamento de pedidos em tempo real usando Laravel, React.js e MySQL."
     },
     "nidaa": {
       "title": "Nidaa El-Samma",
-      "desc": "Aplicativo web islâmico com orações diárias, audição do Alcorão, Tasbeeh e horários de oração com som do Adhan e exibição da data Hijri."
+      "desc": "Aplicação web islâmica com orações diárias, escuta do Alcorão, Tasbeeh, horários de oração com som do Adhan e exibição da data Hijri."
     }
   },
   "contact": {
@@ -110,13 +145,15 @@
     "info": {
       "email": "Endereço de Email",
       "phone": "Número de Telefone",
-      "location": "Localização"
+      "location": "Localização",
+      "mopile": "+971 50 321 4077",
+      "city": "EAU, Dubai"
     },
     "form": {
       "name": "Seu Nome",
       "email": "Seu Email",
       "subject": "Assunto",
-      "message": "Sua Mensagem/Consulta",
+      "message": "Sua Mensagem / Consulta",
       "button": "Enviar Mensagem"
     }
   }

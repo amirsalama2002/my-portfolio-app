@@ -1,107 +1,141 @@
 {
+  "hero": {
+    "title": "Services de nettoyage professionnels",
+    "subtitle": "Pour maisons, bureaux et entreprises",
+    "cta2": "Nos Services",
+    "cta1": "Obtenez un devis gratuit",
+    "residential": "Nettoyage résidentiel",
+    "commercial": "Nettoyage commercial",
+    "deep": "Nettoyage en profondeur",
+    "move": "Déménagement / Emménager",
+    "carpet": "Nettoyage de tapis",
+    "window": "Nettoyage de fenêtres",
+    "experience": "Plus de 10 ans d'expérience",
+    "projects": "Plus de 1200 projets",
+    "support": "Support 24/7",
+    "eco": "Écologique",
+    "desc": "Nettoyage professionnel de haute qualité pour votre maison ou votre bureau.",
+    "ahmed": "Top H Cleaning a transformé mon espace ! Je recommande vivement.",
+    "sara": "Service rapide, fiable et professionnel.",
+    "omar": "Équipe de nettoyage exceptionnelle avec d'excellents résultats.",
+    "testimonials": "Témoignages"
+  },
+  "meroabout": {
+    "title": "À propos de Top H Cleaning",
+    "description": "Top H Cleaning est un prestataire de services de nettoyage professionnel spécialisé dans le nettoyage résidentiel et commercial.",
+    "more": "Nous combinons des années d'expérience avec des techniques de nettoyage modernes pour garantir la satisfaction et un environnement plus sain pour nos clients.",
+    "professional": "Équipe professionnelle",
+    "professional_desc": "Nos spécialistes du nettoyage formés assurent que chaque recoin est impeccable.",
+    "safe": "Sûr et fiable",
+    "safe_desc": "Nous utilisons des produits écologiques sûrs pour les familles et les animaux.",
+    "fast": "Efficace et ponctuel",
+    "fast_desc": "Notre équipe termine les tâches à temps sans compromettre la qualité.",
+    "eco": "Écologique",
+    "eco_desc": "Nous prenons soin de l'environnement avec des solutions de nettoyage durables.",
+    "we": "Pourquoi choisir Top H Cleaning"
+  },
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "services": "Expérience",
+    "services": "Services",
     "contact": "Contact",
-    "prodect" : "Produit"
+    "prodect": "Projets"
   },
   "home": {
     "greeting": "Bonjour, je suis",
     "name": "Amir Salama",
-    "title": "Développeur Full Stack (Laravel | React.js)",
-    "hire_me": "Embauchez-moi",
-    "view_work": "Voir les projets",
-    "my_name": "Amir Salama"
+    "title": "Top H Cleaning — Entreprise de nettoyage professionnelle",
+    "hire_me": "Engagez-moi",
+    "view_work": "Voir le travail",
+    "my_name": "Top H Cleaning"
   },
   "lango": {
-  "en": "Anglais",
-  "ar": "Arabe",
-  "fr": "Français",
-  "de": "Allemand",
-  "ru": "Russe",
-  "pt": "Portugais",
-  "hi": "Hindi",
-  "cn": "Chinois",
-  "es": "Espagnol",
-  "it": "Italien"
-},
-
+    "en": "Anglais",
+    "ar": "Arabe",
+    "fr": "Français",
+    "de": "Allemand",
+    "ru": "Russe",
+    "pt": "Portugais",
+    "hi": "Hindi",
+    "cn": "Chinois",
+    "es": "Espagnol",
+    "it": "Italien"
+  },
   "home_sections": {
     "stats": {
       "title": "Mes réalisations et mon impact",
       "l1": "Années d'expérience",
       "l2": "Amélioration des performances backend",
-      "l3": "Applications web modernes développées",
-      "l4": "Optimisation de la vitesse du frontend"
+      "l3": "Applications web modernes créées",
+      "l4": "Amélioration de la vitesse frontend"
     },
     "skills": {
       "title": "Compétences principales",
       "p1": "Maîtrise solide de PHP et du framework Laravel pour un développement backend robuste et évolutif.",
       "p2": "Création d'interfaces dynamiques et conviviales avec React.js et JavaScript moderne (ES6+).",
-      "p3": "Expert dans la création de designs réactifs et précis au pixel près avec le framework Tailwind CSS.",
-      "p4": "Compétent en développement d’API, optimisation de base de données (MySQL) et intégration de services tiers."
+      "p3": "Expert dans la création de designs pixel-perfect et responsives avec Tailwind CSS.",
+      "p4": "Compétent dans le développement d'API, l'optimisation de bases de données (MySQL) et l'intégration de services tiers."
     },
     "objective": {
-      "title": "Pourquoi m’embaucher ? La valeur que j’apporte.",
-      "read_more": "Lire l’histoire complète"
+      "title": "Pourquoi m'engager ? La valeur que j'apporte.",
+      "read_more": "Lire l'histoire complète"
     },
     "featured": {
-      "title": "Projet vedette",
+      "title": "Projet en vedette",
       "view_all": "Voir tous les projets"
     },
     "edu": {
-      "title": "Parcours et communication",
-      "degree": "Licence en systèmes d'information",
-      "major": "Technologies de l'information",
+      "title": "Formation et communication",
+      "degree": "Licence en Systèmes d'information",
+      "major": "Technologie de l'information",
       "academy": "Académie Al Shorouk, Égypte (2020-2024)",
       "languages": "Langues et communication",
-      "ar": "Arabe : Langue maternelle",
-      "en": "Anglais : Intermédiaire (en amélioration pour la communication professionnelle)"
+      "ar": "Arabe : langue maternelle",
+      "en": "Anglais : intermédiaire (en amélioration pour communication professionnelle)"
     }
   },
   "about": {
-    "objective_title": "Présentation",
+    "objective_title": "Introduction",
     "no": "Compétences",
-    "objective_p1": "Développeur Full Stack avec plus de 2 ans d’expérience pratique, ayant construit plus de 10 applications web modernes avec Laravel et React.js.",
-    "objective_p2": "Compétent en développement d’API, optimisation de base de données et amélioration des performances front-end. Passionné par l’écriture d’un code propre, évolutif et centré sur l’utilisateur.",
+    "objective_p1": "Développeur Full Stack avec plus de 2 ans d'expérience pratique dans la création de plus de 10 applications web modernes utilisant Laravel et React.js.",
+    "objective_p2": "Compétent dans le développement d'API, l'optimisation des bases de données et l'amélioration des performances frontend. Passionné par l'écriture d'un code propre et évolutif et par la livraison de solutions centrées sur l'utilisateur.",
     "download_cv": "Télécharger mon CV",
     "skills": {
-      "languages": "Langages",
+      "languages": "Langues",
       "frameworks": "Frameworks",
       "databases": "Bases de données",
       "others": "Autres (Concepts)"
     }
   },
   "exp": {
-    "subtitle": "Mes réalisations et contributions clés : une vitrine de mes projets les plus importants, mettant en avant mon rôle et les technologies utilisées pour atteindre leurs objectifs.",
+    "subtitle": "Mes réalisations et impact clé : une vitrine de mes projets de développement les plus significatifs, mettant en valeur mon rôle et les technologies utilisées.",
     "title": "Expérience professionnelle",
     "hash_title": "Développeur Full Stack",
-    "hash_duration": "Mars 2025 - Octobre 2025",
-    "hash_p1": "Développement et déploiement de plus de 3 applications full stack utilisant Laravel, React.js et Tailwind CSS.",
-    "hash_p2": "Mise en œuvre d’une authentification sécurisée JWT et intégration d’API tierces.",
-    "hash_p3": "Collaboration avec les concepteurs UI/UX pour offrir des expériences web réactives et de haute qualité.",
+    "hash_duration": "Mar 2025 - Oct 2025",
+    "hash_p1": "Développement et déploiement de plus de 3 applications full-stack utilisant Laravel, React.js et Tailwind CSS.",
+    "hash_p2": "Mise en place d'une authentification JWT sécurisée et intégration d'API tierces.",
+    "hash_p3": "Collaboration étroite avec les designers UI/UX pour livrer des expériences web responsives et de haute qualité.",
     "aqar_title": "Développeur Back-End (PHP / Laravel)",
-    "aqar_duration": "Janvier 2024 - Février 2025",
-    "aqar_p1": "Amélioration des performances backend de 30 % grâce à l’optimisation des requêtes et au cache.",
-    "aqar_p2": "Création et maintenance d’API RESTful utilisées par plusieurs modules frontend.",
-    "aqar_p3": "Collaboration avec l’équipe frontend pour offrir une expérience utilisateur 20 % plus rapide."
+    "aqar_duration": "Jan 2024 - Fév 2025",
+    "aqar_p1": "Amélioration des performances backend de 30 % grâce à l'optimisation des requêtes et au caching.",
+    "aqar_p2": "Création et maintenance d'API RESTful utilisées par plusieurs modules frontend.",
+    "aqar_p3": "Collaboration avec l'équipe frontend pour offrir une expérience utilisateur 20 % plus rapide."
   },
   "projects": {
     "title": "Projets clés",
-    "live_demo": "Démo en ligne",
+    "live_demo": "Démo en direct",
     "github_code": "Code GitHub",
     "devdocs": {
       "title": "DevDocs Language",
-      "desc": "Un hub de documentation pour développeurs regroupant plusieurs langages et frameworks dans une interface rapide et consultable (React.js, Tailwind CSS)."
+      "desc": "Hub de documentation pour développeurs regroupant plusieurs langages et frameworks dans une interface rapide et consultable (React.js, Tailwind CSS)."
     },
     "ecommerce": {
-      "title": "Application e-commerce (Laravel + React)",
-      "desc": "Plateforme e-commerce full stack avec paiement sécurisé, gestion des produits et suivi des commandes en temps réel via Laravel, React.js et MySQL."
+      "title": "Application E-commerce (Laravel + React)",
+      "desc": "Plateforme e-commerce full-stack avec paiement sécurisé, gestion des produits et suivi des commandes en temps réel utilisant Laravel, React.js et MySQL."
     },
     "nidaa": {
       "title": "Nidaa El-Samma",
-      "desc": "Application islamique avec prières quotidiennes, écoute du Coran, tasbeeh et horaires de prière avec appel à la prière et affichage de la date hégirienne."
+      "desc": "Application web islamique avec prières quotidiennes, écoute du Coran, Tasbeeh, horaires de prière avec son Adhan et affichage de la date Hijri."
     }
   },
   "contact": {
@@ -111,7 +145,9 @@
     "info": {
       "email": "Adresse e-mail",
       "phone": "Numéro de téléphone",
-      "location": "Emplacement"
+      "location": "Lieu",
+      "mopile": "+971 50 321 4077",
+      "city": "EAU, Dubaï"
     },
     "form": {
       "name": "Votre nom",

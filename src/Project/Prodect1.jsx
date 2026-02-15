@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/project1.png",
-  "https://cdn.dribbble.com/userupload/42933287/file/original-ec8f0d04927196d74cec61452e8cae6e.png",
-  "https://cdn.dribbble.com/userupload/7766740/file/original-aa2893c6f39b7f9e652d393897c93ad9.jpg",
-  "https://cdn.dribbble.com/userupload/7766738/file/original-03367fd9327b6da0d33a32c70bbde424.jpg",
-  "https://cdn.dribbble.com/userupload/31534067/file/original-4ef28a208c6a0b5408a3c061543fc098.png",
+  "https://static1.squarespace.com/static/65ea867dce655163db37c70b/t/6670d6fcdd2e11422d259eb4/1730394348059/DALL%C2%B7E%2B2024-06-18%2B08.01.51%2B-%2BA%2Brealistic%2Bimage%2Bof%2Ba%2Bmodern%2C%2Bwell-furnished%2Bliving%2Broom%2Band%2Bkitchen%2Barea%2C%2Bfocusing%2Bon%2Bcommon%2Bareas%2Bthat%2Bmight%2Bbe%2Bmissed%2Bduring%2Ba%2Bdeep%2Bclean.%2BThe%2Bsce%2B%282%29.jpg?format=1500w",
+  "https://cdn.apartmenttherapy.info/image/upload/f_auto%2Cq_auto%3Aeco%2Cc_fill%2Cg_auto%2Cw_1500%2Car_3%3A2/at%2Fnews-culture%2F2024-05%2Fclean-one-room-a-day%2Fclean-one-room-a-day-kitchen-diptych",
+  "https://i.pinimg.com/736x/5b/0d/9f/5b0d9ffb34d760a7ebf9a68e583af3d0.jpg",
+  "https://images.squarespace-cdn.com/content/v1/5a29dce0dc2b4a1889baa060/1690337885849-0EVMHDYVLKLNBEW9XPJ0/509%2Btub%2B2.jpg",
+  "https://www.masa7.com/wp-content/uploads/%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%B9%D9%85%D9%8A%D9%82-%D8%B4%D9%82%D8%A9-%D8%B3%D9%83%D9%86%D9%8A%D8%A9-%D9%82%D8%A8%D9%84-%D9%88%D8%A8%D8%B9%D8%AF.webp",
 ];
 
 export default function Project1() {
@@ -45,7 +45,7 @@ export default function Project1() {
             <p className="text-sm font-semibold text-white">
               Project {active + 1}
             </p>
-            <p className="text-xs text-slate-400">UI / UX • Frontend</p>
+            <p className="text-xs text-slate-400">Top / H • Cleaning</p>
           </div>
 
           {/* Dots */}
@@ -120,7 +120,7 @@ export default function Project1() {
               Project {active + 1}
             </p>
             <p className="text-sm text-slate-300">
-              UI / UX • Frontend Development
+              Top / H • Cleaning
             </p>
           </motion.div>
         </div>

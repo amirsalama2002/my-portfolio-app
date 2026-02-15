@@ -47,7 +47,7 @@ export default function Navbar() {
   const navItems = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.about'), path: '/about' },
-    { name: t('nav.services'), path: '/experience' },
+    // { name: t('nav.services'), path: '/experience' },
     { name: t('nav.prodect'), path: '/prodect' },
     { name: t('nav.contact'), path: '/contact' },
   ]
@@ -68,6 +68,7 @@ export default function Navbar() {
               {/* Logo */}
               <Link to="/" className="text-xl font-extrabold tracking-tight text-blue-400 hover:text-blue-500">
                 {t('home.my_name')}
+                {/* Top H Cleaning */}
               </Link>
 
               {/* Desktop Nav */}

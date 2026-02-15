@@ -68,7 +68,7 @@ export default function ContactPage() {
             animate="show"
             className="space-y-8"
           >
-            <Info icon={<Mail />} title={t("contact.info.email")} value="hamirsalama@gmail.com" />
+            <Info icon={<Mail />} title={t("contact.info.email")} value="tophcleaing@gmail.com" />
             <Info icon={<Phone />} title={t("contact.info.phone")} value={t("contact.info.mopile")} />
             <Info icon={<MapPin />} title={t("contact.info.location")} value={t("contact.info.city")} />
           </motion.div>

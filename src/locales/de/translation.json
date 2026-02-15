@@ -1,127 +1,159 @@
 {
+  "hero": {
+    "title": "Professionelle Reinigungsdienste",
+    "subtitle": "Für Häuser, Büros & Unternehmen",
+    "cta2": "Unsere Dienstleistungen",
+    "cta1": "Kostenloses Angebot erhalten",
+    "residential": "Wohnungsreinigung",
+    "commercial": "Gewerbliche Reinigung",
+    "deep": "Tiefenreinigung",
+    "move": "Ein- / Auszug",
+    "carpet": "Teppichreinigung",
+    "window": "Fensterreinigung",
+    "experience": "Über 10 Jahre Erfahrung",
+    "projects": "Über 1200 Projekte",
+    "support": "24/7 Support",
+    "eco": "Umweltfreundlich",
+    "desc": "Hochwertige professionelle Reinigung für Ihr Zuhause oder Büro.",
+    "ahmed": "Top H Cleaning hat meinen Raum verwandelt! Sehr zu empfehlen.",
+    "sara": "Schneller, zuverlässiger und professioneller Service.",
+    "omar": "Außergewöhnliches Reinigungsteam mit großartigen Ergebnissen.",
+    "testimonials": "Referenzen"
+  },
+  "meroabout": {
+    "title": "Über Top H Cleaning",
+    "description": "Top H Cleaning ist ein professioneller Reinigungsdienstleister, der sich auf Wohn- und Geschäftsreinigung spezialisiert.",
+    "more": "Wir kombinieren jahrelange Erfahrung mit modernen Reinigungstechniken, um Zufriedenheit und eine gesündere Umgebung für unsere Kunden zu garantieren.",
+    "professional": "Professionelles Team",
+    "professional_desc": "Unsere geschulten Reinigungsspezialisten sorgen dafür, dass jede Ecke makellos ist.",
+    "safe": "Sicher & Zuverlässig",
+    "safe_desc": "Wir verwenden umweltfreundliche Produkte, die für Familien und Haustiere sicher sind.",
+    "fast": "Effizient & Termingerecht",
+    "fast_desc": "Unser Team erledigt Aufgaben pünktlich, ohne die Qualität zu beeinträchtigen.",
+    "eco": "Umweltfreundlich",
+    "eco_desc": "Wir kümmern uns um die Umwelt mit nachhaltigen Reinigungslösungen.",
+    "we": "Warum Top H Cleaning wählen"
+  },
   "nav": {
     "home": "Startseite",
-    "about": "Über mich",
-    "services": "Erfahrung",
+    "about": "Über uns",
+    "services": "Dienstleistungen",
     "contact": "Kontakt",
-    "prodect" : "Produkt"
+    "prodect": "Projekte"
   },
   "home": {
     "greeting": "Hallo, ich bin",
     "name": "Amir Salama",
-    "title": "Full Stack Entwickler (Laravel | React.js)",
-    "hire_me": "Mich einstellen",
+    "title": "Top H Cleaning — Professionelles Reinigungsunternehmen",
+    "hire_me": "Engagieren Sie mich",
     "view_work": "Arbeiten ansehen",
-    "my_name": "Amir Salama"
+    "my_name": "Top H Cleaning"
   },
   "lango": {
-  "en": "Englisch",
-  "ar": "Arabisch",
-  "fr": "Französisch",
-  "de": "Deutsch",
-  "ru": "Russisch",
-  "pt": "Portugiesisch",
-  "hi": "Hindi",
-  "cn": "Chinesisch",
-  "es": "Spanisch",
-  "it": "Italienisch"
-},
-
+    "en": "Englisch",
+    "ar": "Arabisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "ru": "Russisch",
+    "pt": "Portugiesisch",
+    "hi": "Hindi",
+    "cn": "Chinesisch",
+    "es": "Spanisch",
+    "it": "Italienisch"
+  },
   "home_sections": {
     "stats": {
-      "title": "Meine Erfolge & Wirkung",
-      "l1": "Jahre Erfahrung",
+      "title": "Meine Erfolge & Einfluss",
+      "l1": "Jahre der Erfahrung",
       "l2": "Backend-Leistungssteigerung",
-      "l3": "Moderne Web-Apps entwickelt",
+      "l3": "Moderne Webanwendungen erstellt",
       "l4": "Frontend-Geschwindigkeit verbessert"
     },
     "skills": {
       "title": "Kernkompetenzen",
-      "p1": "Fundierte Beherrschung von PHP und dem Laravel-Framework für robuste, skalierbare Backend-Entwicklung.",
+      "p1": "Fundierte Kenntnisse in PHP und dem Laravel-Framework für robuste, skalierbare Backend-Entwicklung.",
       "p2": "Erstellung dynamischer, benutzerfreundlicher Oberflächen mit React.js und modernem JavaScript (ES6+).",
-      "p3": "Experte für pixelgenaue, responsive Designs mit dem Utility-First-Framework Tailwind CSS.",
-      "p4": "Erfahren in API-Entwicklung, Datenbankoptimierung (MySQL) und Integration von Drittanbieter-Services."
+      "p3": "Experte in der Erstellung pixelgenauer, responsiver Designs mit dem Utility-First-Framework Tailwind CSS.",
+      "p4": "Erfahren in API-Entwicklung, Datenbankoptimierung (MySQL) und Integration von Drittanbieterdiensten."
     },
     "objective": {
-      "title": "Warum mich einstellen? Der Mehrwert, den ich bringe.",
-      "read_more": "Vollständige Geschichte lesen"
+      "title": "Warum mich einstellen? Der Mehrwert, den ich biete.",
+      "read_more": "Gesamte Geschichte lesen"
     },
     "featured": {
-      "title": "Hervorgehobenes Projekt",
+      "title": "Ausgewähltes Projekt",
       "view_all": "Alle Projekte ansehen"
     },
     "edu": {
-      "title": "Hintergrund & Kommunikation",
-      "degree": "Bachelor-Abschluss in Informationssystemen",
+      "title": "Ausbildung & Kommunikation",
+      "degree": "Bachelor in Informationssystemen",
       "major": "Informationstechnologie",
-      "academy": "Al Shorouk Academy, Ägypten (2020–2024)",
+      "academy": "Al Shorouk Academy, Ägypten (2020-2024)",
       "languages": "Sprachen & Kommunikation",
       "ar": "Arabisch: Muttersprache",
-      "en": "Englisch: Mittelstufe (wird für berufliche Kommunikation verbessert)"
+      "en": "Englisch: Mittelstufe (Verbesserung für berufliche Kommunikation)"
     }
   },
   "about": {
     "objective_title": "Einführung",
     "no": "Fähigkeiten",
-    "objective_p1": "Full Stack Entwickler mit über 2 Jahren praktischer Erfahrung in der Entwicklung von mehr als 10 modernen Webanwendungen mit Laravel und React.js.",
-    "objective_p2": "Erfahren in API-Entwicklung, Datenbankoptimierung und Verbesserung der Frontend-Leistung. Leidenschaftlich daran interessiert, sauberen, skalierbaren Code zu schreiben und benutzerzentrierte Lösungen zu liefern.",
-    "download_cv": "Meinen Lebenslauf herunterladen",
+    "objective_p1": "Full-Stack-Entwickler mit über 2 Jahren praktischer Erfahrung in der Erstellung von mehr als 10 modernen Webanwendungen mit Laravel und React.js.",
+    "objective_p2": "Erfahren in API-Entwicklung, Datenbankoptimierung und Frontend-Leistungsverbesserung. Leidenschaftlich in sauberem, skalierbarem Code und nutzerzentrierten Lösungen.",
+    "download_cv": "Mein CV herunterladen",
     "skills": {
-      "languages": "Programmiersprachen",
+      "languages": "Sprachen",
       "frameworks": "Frameworks",
       "databases": "Datenbanken",
-      "others": "Weitere Konzepte"
+      "others": "Andere (Konzepte)"
     }
   },
   "exp": {
-    "subtitle": "Meine Erfolge und wichtigsten Beiträge: Eine Präsentation meiner bedeutendsten Entwicklungsprojekte, die meine Rolle und die verwendeten Technologien zur Erreichung ihrer Ziele hervorhebt.",
+    "subtitle": "Meine Leistungen und Schlüsselwirkung: Eine Übersicht meiner wichtigsten Entwicklungsprojekte, mit Fokus auf meine Rolle und die verwendeten Technologien.",
     "title": "Berufserfahrung",
-    "hash_title": "Full Stack Entwickler",
-    "hash_duration": "März 2025 - Oktober 2025",
-    "hash_p1": "Entwickelte und implementierte mehr als 3 Full-Stack-Anwendungen mit Laravel, React.js und Tailwind CSS.",
-    "hash_p2": "Implementierte sichere JWT-Authentifizierung und integrierte APIs von Drittanbietern.",
-    "hash_p3": "Enge Zusammenarbeit mit UI/UX-Designern zur Bereitstellung reaktionsfähiger, hochwertiger Web-Erlebnisse.",
-    "aqar_title": "Back-End Entwickler (PHP / Laravel)",
-    "aqar_duration": "Januar 2024 - Februar 2025",
-    "aqar_p1": "Backend-Leistung um 30 % verbessert durch Abfrageoptimierung und Caching.",
-    "aqar_p2": "Erstellte und wartete RESTful APIs, die von mehreren Frontend-Modulen genutzt wurden.",
-    "aqar_p3": "Mit dem Frontend-Team zusammengearbeitet, um eine 20 % schnellere Benutzererfahrung zu liefern."
+    "hash_title": "Full-Stack-Entwickler",
+    "hash_duration": "März 2025 - Okt 2025",
+    "hash_p1": "Entwicklung und Bereitstellung von mehr als 3 Full-Stack-Anwendungen mit Laravel, React.js und Tailwind CSS.",
+    "hash_p2": "Implementierung sicherer JWT-Authentifizierung und Integration von Drittanbieter-APIs.",
+    "hash_p3": "Enge Zusammenarbeit mit UI/UX-Designern, um responsive, hochwertige Web-Erlebnisse zu liefern.",
+    "aqar_title": "Back-End-Entwickler (PHP / Laravel)",
+    "aqar_duration": "Jan 2024 - Feb 2025",
+    "aqar_p1": "Verbesserung der Backend-Leistung um 30 % durch Abfrageoptimierung und Caching.",
+    "aqar_p2": "Erstellung und Pflege von RESTful APIs, die von mehreren Frontend-Modulen genutzt werden.",
+    "aqar_p3": "Zusammenarbeit mit dem Frontend-Team für eine 20 % schnellere Benutzererfahrung."
   },
   "projects": {
-    "title": "Wichtige Projekte",
+    "title": "Schlüsselprojekte",
     "live_demo": "Live-Demo",
     "github_code": "GitHub-Code",
     "devdocs": {
-      "title": "DevDocs Sprache",
-      "desc": "Ein Entwickler-Dokumentationszentrum, das mehrere Sprachen und Frameworks in einer schnellen, durchsuchbaren Oberfläche zusammenführt (React.js, Tailwind CSS)."
+      "title": "DevDocs-Sprache",
+      "desc": "Eine Entwickler-Dokumentationsplattform, die mehrere Sprachen und Frameworks in einer schnellen, durchsuchbaren Oberfläche bündelt (React.js, Tailwind CSS)."
     },
     "ecommerce": {
-      "title": "E-Commerce App (Laravel + React)",
-      "desc": "Full-Stack E-Commerce-Plattform mit sicherem Checkout, Produktverwaltung und Echtzeit-Bestellverfolgung mit Laravel, React.js und MySQL."
+      "title": "E-Commerce-App (Laravel + React)",
+      "desc": "Full-Stack-E-Commerce-Plattform mit sicherer Bezahlung, Produktverwaltung und Echtzeit-Bestellverfolgung mit Laravel, React.js und MySQL."
     },
     "nidaa": {
       "title": "Nidaa El-Samma",
-      "desc": "Eine islamische Webanwendung mit täglichen Gebeten, Koranhören, Tasbeeh und Gebetszeiten mit Adhan-Sound und Hijri-Datumsanzeige."
+      "desc": "Eine islamische Webanwendung mit täglichen Gebeten, Koran-Hören, Tasbeeh, Gebetszeiten mit Adhan-Sound und Anzeige des Hijri-Datums."
     }
   },
   "contact": {
     "submitting": "Nachricht wird gesendet...",
-    "sending": "Wird gesendet...",
+    "sending": "Senden...",
     "success_message": "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
     "info": {
       "email": "E-Mail-Adresse",
       "phone": "Telefonnummer",
-      "location": "Standort",
-      "Mopil": "+971 50 321 4077",
-"city": "VAE, Dubai"
-
-
+      "location": "Ort",
+      "mopile": "+971 50 321 4077",
+      "city": "VAE, Dubai"
     },
     "form": {
       "name": "Ihr Name",
       "email": "Ihre E-Mail",
       "subject": "Betreff",
-      "message": "Ihre Nachricht/Anfrage",
+      "message": "Ihre Nachricht / Anfrage",
       "button": "Nachricht senden"
     }
   }

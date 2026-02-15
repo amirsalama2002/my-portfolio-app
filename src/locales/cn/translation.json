@@ -1,69 +1,104 @@
 {
+  "hero": {
+    "title": "专业清洁服务",
+    "subtitle": "适用于家庭、办公室和企业",
+    "cta2": "我们的服务",
+    "cta1": "获取免费报价",
+    "residential": "住宅清洁",
+    "commercial": "商业清洁",
+    "deep": "深度清洁",
+    "move": "搬入/搬出",
+    "carpet": "地毯清洁",
+    "window": "窗户清洁",
+    "experience": "10年以上经验",
+    "projects": "1200+项目",
+    "support": "24/7支持",
+    "eco": "环保",
+    "desc": "为您的家庭或办公室提供高质量的专业清洁。",
+    "ahmed": "Top H Cleaning 改造了我的空间！强烈推荐。",
+    "sara": "快速、可靠且专业的服务。",
+    "omar": "卓越的清洁团队，效果显著。",
+    "testimonials": "客户评价"
+  },
+  "meroabout": {
+    "title": "关于 Top H Cleaning",
+    "description": "Top H Cleaning 是一家专业清洁服务提供商，专注于住宅和商业清洁。",
+    "more": "我们将多年的经验与现代清洁技术相结合，保证客户满意并提供更健康的环境。",
+    "professional": "专业团队",
+    "professional_desc": "我们的培训清洁专家确保每个角落都干净无瑕。",
+    "safe": "安全可靠",
+    "safe_desc": "我们使用环保产品，对家庭和宠物安全。",
+    "fast": "高效及时",
+    "fast_desc": "我们的团队按时完成任务，不影响质量。",
+    "eco": "环保",
+    "eco_desc": "我们通过可持续清洁方案关爱环境。",
+    "we": "为什么选择 Top H Cleaning"
+  },
   "nav": {
     "home": "首页",
-    "about": "关于",
-    "services": "经验",
+    "about": "关于我们",
+    "services": "服务",
     "contact": "联系",
-    "prodect" :"简体中文"
+    "prodect": "项目"
   },
   "home": {
-    "greeting": "你好，我是",
+    "greeting": "您好，我是",
     "name": "Amir Salama",
-    "title": "全栈开发工程师 (Laravel | React.js)",
+    "title": "Top H Cleaning — 专业清洁公司",
     "hire_me": "雇用我",
     "view_work": "查看作品",
-    "my_name": "Amir Salama"
+    "my_name": "Top H Cleaning"
   },
   "lango": {
-  "en": "英语",
-  "ar": "阿拉伯语",
-  "fr": "法语",
-  "de": "德语",
-  "ru": "俄语",
-  "pt": "葡萄牙语",
-  "hi": "印地语",
-  "cn": "中文",
-  "es": "西班牙语",
-  "it": "意大利语"
-},
+    "en": "英语",
+    "ar": "阿拉伯语",
+    "fr": "法语",
+    "de": "德语",
+    "ru": "俄语",
+    "pt": "葡萄牙语",
+    "hi": "印地语",
+    "cn": "中文",
+    "es": "西班牙语",
+    "it": "意大利语"
+  },
   "home_sections": {
     "stats": {
       "title": "我的成就与影响",
-      "l1": "工作经验年数",
+      "l1": "经验年限",
       "l2": "后端性能提升",
-      "l3": "构建的现代网页应用",
-      "l4": "前端速度改进"
+      "l3": "现代 Web 应用开发",
+      "l4": "前端速度提升"
     },
     "skills": {
-      "title": "核心专长",
-      "p1": "精通 PHP 和 Laravel 框架，进行稳健且可扩展的后端开发。",
+      "title": "核心技能",
+      "p1": "精通 PHP 与 Laravel 框架，进行强大、可扩展的后端开发。",
       "p2": "使用 React.js 和现代 JavaScript (ES6+) 构建动态、用户友好的界面。",
-      "p3": "擅长使用 Tailwind CSS 创建像素级精确、响应式设计。",
-      "p4": "熟练进行 API 开发、数据库优化（MySQL）以及第三方服务集成。"
+      "p3": "擅长使用 Tailwind CSS 创建像素完美、响应式设计。",
+      "p4": "熟悉 API 开发、数据库优化（MySQL）及第三方服务集成。"
     },
     "objective": {
-      "title": "为什么雇用我？我带来的价值。",
-      "read_more": "阅读全文"
+      "title": "为什么雇用我？我能带来的价值",
+      "read_more": "阅读完整故事"
     },
     "featured": {
       "title": "精选项目展示",
       "view_all": "查看所有项目"
     },
     "edu": {
-      "title": "教育背景与交流能力",
+      "title": "教育背景与沟通能力",
       "degree": "信息系统学士学位",
       "major": "信息技术",
       "academy": "Al Shorouk Academy, 埃及 (2020-2024)",
-      "languages": "语言与交流能力",
+      "languages": "语言与沟通",
       "ar": "阿拉伯语：母语",
-      "en": "英语：中级（专业交流中不断提升）"
+      "en": "英语：中级（正在提升专业沟通能力）"
     }
   },
   "about": {
     "objective_title": "简介",
     "no": "技能",
-    "objective_p1": "全栈开发工程师，拥有 2+ 年实际经验，构建了 10+ 个现代网页应用，使用 Laravel 和 React.js。",
-    "objective_p2": "擅长 API 开发、数据库优化和前端性能提升。热衷于编写干净、可扩展的代码并提供以用户为中心的解决方案。",
+    "objective_p1": "全栈开发人员，拥有2年以上实际经验，使用 Laravel 和 React.js 构建10+现代 Web 应用。",
+    "objective_p2": "精通 API 开发、数据库优化及前端性能提升。热衷于编写干净、可扩展代码并提供以用户为中心的解决方案。",
     "download_cv": "下载我的简历",
     "skills": {
       "languages": "语言",
@@ -73,51 +108,53 @@
     }
   },
   "exp": {
-    "subtitle": "我的成就与关键影响：展示我最重要的开发项目，突出我的角色及所使用的技术以达成目标。",
-    "title": "专业经验",
-    "hash_title": "全栈开发工程师",
+    "subtitle": "我的成就与主要影响：展示我最重要的开发项目，突出我的角色和使用的技术。",
+    "title": "职业经验",
+    "hash_title": "全栈开发",
     "hash_duration": "2025年3月 - 2025年10月",
-    "hash_p1": "使用 Laravel、React.js 和 Tailwind CSS 开发并部署了 3+ 个全栈应用。",
-    "hash_p2": "实现了安全的 JWT 认证并集成第三方 API。",
-    "hash_p3": "与 UI/UX 设计师紧密合作，交付响应迅速、高质量的网页体验。",
-    "aqar_title": "后端开发工程师 (PHP / Laravel)",
+    "hash_p1": "使用 Laravel、React.js 和 Tailwind CSS 开发并部署 3+ 全栈应用。",
+    "hash_p2": "实现安全的 JWT 身份验证并集成第三方 API。",
+    "hash_p3": "与 UI/UX 设计师紧密合作，交付响应式、高质量的 Web 体验。",
+    "aqar_title": "后端开发 (PHP / Laravel)",
     "aqar_duration": "2024年1月 - 2025年2月",
-    "aqar_p1": "通过查询优化和缓存将后端性能提升了 30%。",
-    "aqar_p2": "构建并维护了供多个前端模块使用的 RESTful API。",
-    "aqar_p3": "与前端团队合作，实现了 20% 更快的用户体验。"
+    "aqar_p1": "通过查询优化和缓存提升后端性能 30%。",
+    "aqar_p2": "构建并维护多个前端模块使用的 RESTful API。",
+    "aqar_p3": "与前端团队协作，提升用户体验 20%。"
   },
   "projects": {
     "title": "主要项目",
     "live_demo": "在线演示",
     "github_code": "GitHub 代码",
     "devdocs": {
-      "title": "开发文档语言",
-      "desc": "一个开发者文档中心，将多种语言和框架汇集到一个快速、可搜索的界面 (React.js, Tailwind CSS)。"
+      "title": "DevDocs 语言",
+      "desc": "一个开发者文档中心，将多种语言和框架整合到一个快速、可搜索的界面中 (React.js, Tailwind CSS)。"
     },
     "ecommerce": {
       "title": "电商应用 (Laravel + React)",
-      "desc": "全栈电商平台，支持安全结账、产品管理和实时订单跟踪，使用 Laravel、React.js 和 MySQL。"
+      "desc": "使用 Laravel、React.js 和 MySQL 构建全栈电商平台，支持安全结账、商品管理和实时订单跟踪。"
     },
     "nidaa": {
       "title": "Nidaa El-Samma",
-      "desc": "一个伊斯兰网页应用，提供每日祈祷、听《古兰经》、念珠、祈祷时间显示，并带有 Adhan 声音和伊斯兰历日期。"
+      "desc": "一款伊斯兰网页应用，提供每日祈祷、古兰经收听、念珠、祈祷时间、阿赞音效及希吉拉日期显示。"
     }
   },
   "contact": {
-    "submitting": "发送信息中...",
+    "submitting": "正在发送消息...",
     "sending": "发送中...",
-    "success_message": "谢谢！您的信息已成功发送。",
+    "success_message": "谢谢！您的消息已成功发送。",
     "info": {
       "email": "电子邮箱",
       "phone": "电话号码",
-      "location": "所在位置"
+      "location": "位置",
+      "mopile": "+971 50 321 4077",
+      "city": "阿联酋，迪拜"
     },
     "form": {
       "name": "您的姓名",
       "email": "您的邮箱",
       "subject": "主题",
-      "message": "您的信息/询问",
-      "button": "发送信息"
+      "message": "您的消息/咨询",
+      "button": "发送消息"
     }
   }
 }
