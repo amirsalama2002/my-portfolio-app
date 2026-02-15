@@ -23,44 +23,32 @@ export default function TestimonialsSection() {
     autoplay: true,
     autoplaySpeed: 4000,
     responsive: [
-      {
-        breakpoint: 1280, // large tablets / small desktops
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 1024, // tablets
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768, // mobile landscape
-        settings: { slidesToShow: 1 },
-      },
-      {
-        breakpoint: 480, // mobile portrait
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 1280, settings: { slidesToShow: 2 } }, // large tablets / small desktops
+      { breakpoint: 1024, settings: { slidesToShow: 2 } }, // tablets
+      { breakpoint: 768, settings: { slidesToShow: 1 } },  // mobile landscape
+      { breakpoint: 480, settings: { slidesToShow: 1 } },  // mobile portrait
     ],
   };
 
   return (
-    <section className="py-20 bg-gray-900 text-gray-100">
+    <section className="py-16 sm:py-20 bg-gray-900 text-gray-100">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 sm:mb-16">
           {t("testimonials.title", "Testimonials")}
         </h2>
 
         <Slider {...settings}>
           {testimonials.map((tst, idx) => (
-            <div key={idx} className="p-4 sm:p-6">
+            <div key={idx} className="p-2 sm:p-4">
               <motion.div
-                className="bg-gray-800 p-8 rounded-xl shadow-lg"
+                className="bg-gray-800 p-6 sm:p-8 rounded-xl shadow-lg"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.2 }}
               >
-                <p className="text-gray-300 mb-4">{tst.text}</p>
-                <h4 className="font-semibold">{tst.name}</h4>
+                <p className="text-gray-300 mb-3 sm:mb-4 text-sm sm:text-base">{tst.text}</p>
+                <h4 className="font-semibold text-sm sm:text-base">{tst.name}</h4>
               </motion.div>
             </div>
           ))}
