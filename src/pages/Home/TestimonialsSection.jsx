@@ -18,15 +18,27 @@ export default function TestimonialsSection() {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 2,
+    slidesToShow: 1, // عنصر واحد بشكل افتراضي
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     responsive: [
-      { breakpoint: 1280, settings: { slidesToShow: 2 } }, // large tablets / small desktops
-      { breakpoint: 1024, settings: { slidesToShow: 2 } }, // tablets
-      { breakpoint: 768, settings: { slidesToShow: 1 } },  // mobile landscape
-      { breakpoint: 480, settings: { slidesToShow: 1 } },  // mobile portrait
+      {
+        breakpoint: 1280,
+        settings: { slidesToShow: 2 }, // على الشاشات الكبيرة جدا يمكن عرض 2
+      },
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 1 }, // tablets
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 }, // mobile landscape
+      },
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 1 }, // mobile portrait
+      },
     ],
   };
 
